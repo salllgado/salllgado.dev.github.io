@@ -1,0 +1,518 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#career {
+    font: Light 16px Lato;
+    letter-spacing: 6.4px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#portfolio {
+    font: Light 16px Lato;
+    letter-spacing: 6.4px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#clients {
+    font: Light 16px Lato;
+    letter-spacing: 6.4px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#nome {
+    text-align: left;
+    font: Light 64px/77px Lato;
+    font-size: 64px;
+    letter-spacing: 19.2px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-weight: lighter;
+
+
+}
+
+#sobrenome {
+    text-align: left;
+    font: Light 64px/77px Lato;
+    font-size: 64px;
+    letter-spacing: 19.2px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-weight: lighter;
+}
+
+#dev {
+
+    text-align: left;
+    font: Regular 28px/34px Lato;
+    font-size: 24px;
+    letter-spacing: 8.4px;
+    color: #FFFFFF;
+    opacity: 1;
+
+}
+
+.container-head {
+    height: 100vh;
+    background: #191919 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+
+#img-perfil {
+    width: 300px
+}
+
+.svgBolinha {
+    width: 200px;
+    height: 200px;
+    background: transparent url('img/perfil/Group5.png') 0% 0% no-repeat padding-box;
+    top: 0px;
+    left: -100px;
+    position: absolute;
+
+}
+
+.tab-content1 {
+    font: Light 18px/22px Lato;
+    letter-spacing: 1.8px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-weight: lighter;
+}
+
+.svgBolinha2 {
+    width: 200px;
+    height: 200px;
+    background: transparent url('img/perfil/Group5.png') 0% 0% no-repeat padding-box;
+    top: 400px;
+    left: 250px;
+    position: absolute;
+
+}
+
+.git {
+    top: 553px;
+    left: 924px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
+.perfil {
+    position: relative;
+}
+
+.linkedin {
+    top: 553px;
+    left: 1004px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
+.container-career {
+
+    height: 100vh;
+    ;
+    background: #121212 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.titulo-career {
+    margin-top: 50px;
+    top: 820px;
+    left: 410px;
+    width: 260px;
+    height: 60px;
+    text-align: left;
+    font: Light 50px/60px Lato;
+    letter-spacing: 15px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: lighter;
+}
+
+.titulo-port {
+    padding-top: 50px;
+    height: 60px;
+    text-align: left;
+    font: Light 50px/60px Lato;
+    letter-spacing: 15px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: lighter;
+}
+
+.titulo-clients {
+    padding-top: 50px;
+    width: 392px;
+    height: 60px;
+    text-align: left;
+    font: Light 50px/60px Lato;
+    letter-spacing: 15px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: lighter;
+    margin-left: -50px;
+}
+
+#portfolio-link > a {
+    text-decoration: none;
+    text-align: left;
+    font: Regular 20px/24px Lato;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+
+.nav-link {
+    color: #FFFFFF;
+    background-color: #121212;
+    font: Regular 24px/29px Lato;
+    font-size: 20px;
+    letter-spacing: 2.4px;
+    opacity: 1;
+    font-weight: lighter;
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #121212;
+    border-left: 2px solid #FFFFFF;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.nav1 > .nav2 {
+    font: Regular 24px/29px Lato;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.nav1 > .nav2.active {
+    opacity: 1;
+}
+
+.nav1 > .nav2:hover {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+#v-pills-home-tab,
+#v-pills-profile-tab,
+#v-pills-messages-tab,
+#v-pills-settings-tab {
+    opacity: 0.5;
+}
+
+#v-pills-home-tab:focus {
+    opacity: 1;
+}
+
+#v-pills-profile-tab:focus {
+    opacity: 1;
+}
+
+#v-pills-messages-tab:focus {
+    opacity: 1;
+}
+
+#v-pills-settings-tab:focus {
+    opacity: 1;
+}
+
+.dataCareer {
+    font: Light 14px/17px Lato;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 1.4px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+
+
+#container-portfolio {
+    top: 1439px;
+    left: 0px;
+    height: 100vh;
+    background: #191919 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#container-clients {
+    left: 0px;
+    height: 100vh;
+    background: #242424 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.table-overflow {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#tabela-1 a {
+    font: Regular 20px/24px Lato;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.xis {
+    width: 15px;
+    float: right;
+    cursor: pointer;
+}
+
+#portfolio-link > a:hover {
+    opacity: 1;
+}
+
+.tab-pane > h2 {
+    font: Regular 32px/39px Lato;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 3.2px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.tab-pane > p {
+    margin-top: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #7c7c7c;
+
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background: #7c7c7c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+
+}
+
+
+#record {
+    width: 92px;
+    opacity: 1;
+
+}
+
+#ituran {
+    width: 157px;
+
+    opacity: 1;
+}
+
+#friboi {
+    width: 240px;
+
+    opacity: 1;
+}
+
+#santander {
+    width: 112px;
+
+    opacity: 1;
+}
+
+#universal {
+    width: 100px;
+
+    opacity: 1;
+}
+
+#exercito {
+    width: 80px;
+
+    opacity: 1;
+}
+
+#c6 {
+    width: 84px;
+
+    opacity: 1;
+}
+
+#victory {
+    width: 97px;
+
+    opacity: 1;
+}
+
+#pnrVinhos {
+    width: 114px;
+
+    opacity: 1;
+}
+
+#vidalink {
+    width: 153px;
+
+    opacity: 1;
+}
+
+#acquaflora {
+    width: 110px;
+
+    opacity: 1;
+}
+
+#krotan {
+    width: 141px;
+
+    opacity: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+#rolarbaixo,
+#rolarcima,
+#rolarbaixo2,
+#rolarbaixo3 {
+    color: #FFFFFF;
+    text-decoration: none;
+    font: Light 14px/17px Lato;
+    font-weight: lighter;
+
+}
+
+
+
+
+.rolar {
+    line-height: -210vh;
+    width: 100%;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.botao-cima {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    width: 30%;
+    height: 400px;
+    overflow-y: auto;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding: 0px 0px 15px 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    opacity: 1;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    opacity: 1;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    float: left;
+    padding: 0px 12px;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+    color: #ffffff;
+}
+
+.link1:hover {
+    opacity: 0.4;
+}
+
+#links {
+    color: #ffffff;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+#links a {
+    cursor: pointer;
+    font: Regular 20px/24px Lato;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.imagens {
+    margin-left: -80px;
+}
+
+#rolarcima2 {
+    line-height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+#quebra {
+    line-height: 80px;
+}
+
+.textPort {
+    font: Regular 18px/22px Lato;
+    letter-spacing: 1.8px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: lighter;
+}
+
+.gdr{
+    font-size: 15px;;
+}
