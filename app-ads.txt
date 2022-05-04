@@ -1,6 +1,6 @@
 ---
 layout: file
 title: "app-ads.txt"
-permalink: /app-ads.txt
+permalink: https://salllgado.github.io/app-ads.txt
 ---
 google.com, pub-9991723094171135, DIRECT, f08c47fec0942fa0
