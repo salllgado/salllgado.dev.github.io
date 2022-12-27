@@ -129,27 +129,12 @@
                             <br>
                             <br>
                         </div>
-
-                        <p id="links" class="col-lg-12">
-                            <a onclick="openCity(event, 'How')" class="link1 how" style="color: #FCB525">Comprinhas - iOS</a>
-                            <a onclick="openCity(event, 'How2')" class="link1 how" style="color: #FCB525">YIPTV - iOS/TVOS</a>
-                            <a onclick="openCity(event, '')" class="linkUnknown" style="color: #fbfbfb">Vidalink</a>
-                            <a onclick="openCity(event, '')" class="linkUnknown" style="color: #fbfbfb">Interfarma</a>
-                            <a onclick="openCity(event, '')" class="linkUnknown" style="color: #fbfbfb">Digitalização Seara</a>
-                            <a onclick="openCity(event, '')" class="linkUnknown" style="color: #fbfbfb">Seara</a>
-                            <a onclick="openCity(event, '')" class="linkUnknown" style="color: #fbfbfb">Avatar da Saúde</a>
-                            <a onclick="openCity(event, '')" class="linkUnknown" style="color: #fbfbfb">Tembici / BikeItaú / BA. Ecobici</a>
-                            <a onclick="openCity(event, '')" class="linkUnknown" style="color: #fbfbfb">Reservatio</a>
-                            <a onclick="openCity(event, '')" class="linkUnknown" style="color: #fbfbfb">Qranio / b.Quest</a>
-                        </p>
-
                         <div class="container" id="verticalMenu">
                             <div class="tab">
                                 <button class="tablinks how" onclick="openCity(event, 'How')" style="color: #FCB525">Comprinhas - iOS</button>
                                 <button class="tablinks how2" onclick="openCity(event, 'How2')" style="color: #FCB525">YIPTV - iOS/TVOS</button>
                             </div>
                             <div id="How" class="tabcontent">
-                                <a><img class="xis mt-3" src="img/Caminho1_2x.png"></a>
                                 <h3 style="color: #FCB525">Comprinhas - iOS</h3>
                                 <p class="textPort">
                                     O app Comprinhas tem como função ajudar o usuário a facilitar o fluxo de compras do usuário quando o mesmo está no supermercado.
@@ -162,7 +147,6 @@
                                 <a href="https://apps.apple.com/us/app/comprinhas/id1562893313" target="_blank"><button type="button" class="btn" style="background-color: #FCB525; width: 210px; height: 54px; color: #191919; font-weight: bold">Download App</button></a>
                             </div>
                             <div id="How2" class="tabcontent">
-                                <a><img class="xis mt-3" src="img/Caminho1_2x.png"></a>
                                 <h3 style="color: #FCB525">YIPTV - iOS/TVOS</h3>
                                 <p class="textPort">
                                     O app YIPTV é o meu filho mais novo! Vindo de uma vontade de criar uma experiência melhor, menos poluída e 'easy to use' dos players M3U eu criei esse app. Disponivel para iOS, iPadOS e MacOS. 
@@ -179,18 +163,6 @@
 
                 <script>
                     $("#verticalMenu").css("display", "block");
-                    $(".link1").click(esconde);
-                    $(".xis").click(retorna);
-
-                    function esconde() {
-                        $("#links").css("display", "none")
-                        $("#verticalMenu").css("display", "block");
-                    }
-
-                    function retorna() {
-                        $("#verticalMenu").css("display", "none");
-                        $("#links").css("display", "block")
-                    }
                 </script>
 
                 <script>
