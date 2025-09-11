@@ -79,10 +79,9 @@
                         <div class="row">
                             <div class="col-3 ">
                                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <a class="nav-link active" id="v-pills-luizalabs-tab" data-toggle="pill" href="#v-pills-luizalabs" role="tab" aria-controls="v-pills-luizalabs" aria-selected="true" style="background-color: #121212">Luizalabs<br><span class="dataCareer" id="datluizalabs">Julho 2025 - Presente</span></a>
-                                    <a class="nav-link" id="v-pills-madeinweb-tab2" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false" style="background-color: #121212">MadeInWeb e Mobile<br><span class="dataCareer" id="datibm">Outubro 2022 - Junho 2024</span></a>
+                                    <a class="nav-link active" id="v-pills-luizalabs-tab" data-toggle="pill" href="#v-pills-luizalabs" role="tab" aria-controls="v-pills-luizalabs" aria-selected="true" style="background-color: #121212">Luizalabs<br><span class="dataCareer" id="datluizalabs">Julho 2024 - Presente</span></a>
+                                    <a class="nav-link" id="v-pills-madeinweb-tab2" data-toggle="pill" href="#v-pills-home2" role="tab" aria-controls="v-pills-home2" aria-selected="false" style="background-color: #121212">MadeInWeb e Mobile<br><span class="dataCareer" id="datibm">Outubro 2022 - Junho 2024</span></a>
                                     <a class="nav-link" id="v-tab-vidalink-tab" data-toggle="pill" href="#v-tab-vidalink" role="tab" aria-controls="v-tab-vidalink" aria-selected="false" style="background-color: #121212">Vidalink<br><span class="dataCareer" id="datMazzatec">Fevereiro 2020 - Outubro 2022</span></a>
-                                    <a class="nav-link" id="v-pills-madeinweb-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false" style="background-color: #121212">MadeInWeb e Mobile<br><span class="dataCareer" id="datibm">Fevereiro 2021 - Outubro 2021</span></a>
                                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="background-color: #121212">James Delivery<br><span class="dataCareer" id="datmade">Fevereiro 2021 - Abril 2021</span></a>
                                     <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false" style="background-color: #121212">IBM<br><span class="dataCareer" id="datgest">Abril 2015 - Março 2017</span></a>
                                     <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false" style="background-color: #121212">Qranio<br><span class="dataCareer" id="datform">Outubro 2017 - Fevereiro 2019</span></a>
@@ -96,7 +95,7 @@
                                     <div class="tab-pane fade text-light" id="v-tab-vidalink" role="tabpanel" aria-labelledby="v-tab-vidalink-tab">
                                         Na Vidalink fui responsável pela manutenção do app, refinamento e acompanhamento de features, lider do time iOS.
                                     </div>
-                                    <div class="tab-pane fade text-light" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-madeinweb-tab">
+                                    <div class="tab-pane fade text-light" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-madeinweb-tab">
                                         Na MadeInWeb coloquei a disposição minhas habilidades no desenvolvimento de aplicativos para iPhone, ajudando o time a criar novos apps e soluções para outros apps, alguns apps internos,
                                         outros apps internos para clientes da MadeInWeb e outros projetos para todos usuários da AppStore.
                                         Dentre eles projetos para JBS, Interfarma, AvatarDaSaúde, Vidalink, Blenders in The Grass, Yoou, Universal, 2Step.
@@ -220,46 +219,39 @@
     </script>
     <script>
         $(function() {
-            // $("#v-pills-madeinweb-tab").();
-            $(".dataCareer").hide();
-            $("#datMazzatec").show();
-            $("#v-tab-vidalink-tab").click(mostraMazzatec);
-            $("#v-pills-madeinweb-tab").click(mostraIbm);
-            $("#v-pills-profile-tab").click(mostramade);
-            $("#v-pills-messages-tab").click(mostragestao);
-            $("#v-pills-settings-tab").click(mostraformacao);
-            $("#v-pills-luizalabs-tab").click(mostraLuizalabs);
-        });
-
-        function mostraMazzatec(){
-            $(".dataCareer").hide();
-            $("#datMazzatec").show();
-        }
-
-        function mostraIbm() {
-            $(".dataCareer").hide();
-            $("#datibm").show();
-        }
-
-        function mostramade() {
-            $(".dataCareer").hide();
-            $("#datmade").show();
-        }
-
-        function mostragestao() {
-            $(".dataCareer").hide();
-            $("#datgest").show();
-        }
-
-        function mostraformacao() {
-            $(".dataCareer").hide();
-            $("#datform").show();
-        }
-
-        function mostraLuizalabs() {
+            // Initial display setup (Luizalabs as first)
             $(".dataCareer").hide();
             $("#datluizalabs").show();
-        }
+
+            // Ensure all nav-links are inactive and only Luizalabs is active initially
+            $(".nav-link").removeClass("active").attr("aria-selected", "false");
+            $("#v-pills-luizalabs-tab").addClass("active").attr("aria-selected", "true");
+
+            // Ensure all tab-panes are hidden and only Luizalabs is shown initially
+            $(".tab-pane").removeClass("show active");
+            $("#v-pills-luizalabs").addClass("show active");
+
+            // Attach a single click handler to the parent of the nav-links
+            $("#v-pills-tab").on("click", ".nav-link", function(e) {
+                e.preventDefault(); // Prevent default Bootstrap tab behavior
+                var clickedLink = $(this);
+                var targetPaneId = clickedLink.attr("href"); // e.g., "#v-pills-luizalabs"
+                var targetDataCareerId = clickedLink.find(".dataCareer").attr("id"); // e.g., "datluizalabs"
+
+                // Remove active state from all nav-links
+                $(".nav-link").removeClass("active").attr("aria-selected", "false");
+                // Add active state to the clicked nav-link
+                clickedLink.addClass("active").attr("aria-selected", "true");
+
+                // Hide all dataCareer spans and show the relevant one
+                $(".dataCareer").hide();
+                $("#" + targetDataCareerId).show();
+
+                // Hide all tab-panes and show the relevant one
+                $(".tab-pane").removeClass("show active");
+                $(targetPaneId).addClass("show active");
+            });
+        });
     </script>
     <span class="clear"></span>
 </body></html>
