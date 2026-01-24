@@ -877,3 +877,42 @@ html {
         flex-direction: row;
     }
 }
+
+/* Language toggle button */
+#lang-toggle {
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (max-width: 768px) {
+    #lang-toggle {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+/* Back to top button */
+.footer-actions {
+    text-align: center;
+    padding: 24px 0 40px;
+}
+
+#back-to-top {
+    background-color: rgba(252,181,37,1);
+    color: #191919 !important;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    #back-to-top {
+        width: 90%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+    }
+}
