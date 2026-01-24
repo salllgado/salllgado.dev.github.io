@@ -879,40 +879,100 @@ html {
 }
 
 /* Language toggle button */
+
 #lang-toggle {
-    background: transparent;
-    color: #FFFFFF;
-    border: 1px solid rgba(255,255,255,0.2);
+    -webkit-appearance: none;
+    appearance: none;
+    /* Match the "rolar" link style */
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    text-decoration: none;
+    font: Light 14px/17px Lato;
+    font-weight: lighter;
+    padding: 6px 8px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: opacity 120ms ease;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Position language selector top-right */
+#lang-toggle {
+    position: fixed !important;
+    top: 18px !important;
+    right: 18px !important;
+}
+
+#lang-toggle:hover,
+#lang-toggle:focus {
+    opacity: 0.85;
+    background: transparent !important;
+    transform: none;
+    box-shadow: none !important;
+    outline: none;
 }
 
 @media (max-width: 768px) {
     #lang-toggle {
         font-size: 12px;
-        padding: 4px 8px;
+        padding: 6px 8px;
     }
 }
 
-/* Back to top button */
+@media (max-width: 480px) {
+    #lang-toggle {
+        top: 10px !important;
+        right: 10px !important;
+        padding: 6px 8px;
+    }
+}
+
+/* Back-to-top floating button */
 .footer-actions {
-    text-align: center;
-    padding: 24px 0 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 24px;
+    z-index: 60;
 }
 
 #back-to-top {
-    background-color: rgba(252,181,37,1);
-    color: #191919 !important;
-    font-weight: 700;
-    padding: 10px 18px;
-    border-radius: 6px;
+    /* Match the "rolar" link style */
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: none !important;
     text-decoration: none;
-    display: inline-block;
+    font: Light 14px/17px Lato;
+    font-weight: lighter;
+    padding: 6px 8px;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: none !important;
+    transition: opacity 120ms ease;
+}
+
+#back-to-top:hover {
+    opacity: 0.85;
+    transform: none;
 }
 
 @media (max-width: 480px) {
+    .footer-actions {
+        right: 0;
+        left: 0;
+        bottom: 12px;
+        text-align: center;
+    }
     #back-to-top {
-        width: 90%;
-        max-width: 320px;
-        display: block;
-        margin: 0 auto;
+        width: auto;
+        max-width: none;
+        border-radius: 0;
+        display: inline-block;
+        padding: 8px 12px;
     }
 }
