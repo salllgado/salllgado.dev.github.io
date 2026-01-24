@@ -516,3 +516,364 @@ html {
 .gdr{
     font-size: 15px;;
 }
+/* ============================= */
+/* MOBILE RESPONSIVE CSS */
+/* ============================= */
+
+/* Tablets and small screens (768px and below) */
+@media (max-width: 768px) {
+    
+    /* Header/Hero section */
+    .container-head {
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .section {
+        min-height: 100vh;
+    }
+    
+    /* Navigation and profile */
+    .container {
+        flex-direction: column !important;
+    }
+    
+    .perfil {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+    
+    #img-perfil {
+        width: 200px;
+    }
+    
+    nav {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #career, #portfolio, #clients {
+        display: block;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    
+    /* Name and title */
+    #nome, #sobrenome {
+        font-size: 36px;
+        letter-spacing: 10px;
+    }
+    
+    #dev {
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+    
+    /* Social icons */
+    .linkedin, .git {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        margin: 0 8px;
+    }
+    
+    /* SVG decorations */
+    .svgBolinha, .svgBolinha2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    
+    /* Scroll down section */
+    .rolar {
+        margin-top: 20px;
+        line-height: normal;
+    }
+    
+    #rolarbaixo, #rolarcima, #rolarbaixo2, #rolarbaixo3 {
+        font-size: 12px;
+    }
+    
+    /* Career section */
+    .container-career {
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .titulo-career, .titulo-port, .titulo-clients {
+        font-size: 32px;
+        letter-spacing: 8px;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .col-8.m-auto {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    /* Vertical tabs */
+    .nav.flex-column {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .nav-pills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding: 10px;
+        flex: 1;
+        min-width: 120px;
+        border-left: none !important;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        border-left: none !important;
+        border-bottom: 2px solid #FFFFFF;
+    }
+    
+    /* Tab content */
+    .row {
+        flex-direction: column;
+    }
+    
+    .col-3, .col-9 {
+        width: 100% !important;
+    }
+    
+    .tab-content1 {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    /* Portfolio section */
+    #container-portfolio {
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    /* Horizontal tabs layout */
+    #verticalMenu {
+        padding: 0;
+    }
+    
+    .tab {
+        width: 100% !important;
+        height: auto !important;
+        float: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    .tab button {
+        width: auto !important;
+        flex: 1;
+        min-width: 150px;
+        padding: 10px 8px;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .tabcontent {
+        width: 100% !important;
+        float: none;
+        display: none;
+        padding: 20px 0;
+        height: auto;
+    }
+    
+    .tabcontent.active,
+    .tabcontent.show {
+        display: block !important;
+    }
+    
+    .textPort {
+        font-size: 14px;
+        letter-spacing: 0.9px;
+    }
+    
+    /* Buttons */
+    .btn {
+        width: 100% !important;
+        max-width: 210px;
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    /* Table scrolling */
+    .table-overflow {
+        max-height: auto;
+        overflow-x: auto;
+    }
+    
+    /* Image responsiveness */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Data career span */
+    .dataCareer {
+        display: block;
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+    
+    /* Overall layout */
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .section {
+        min-height: auto;
+        padding: 30px 15px;
+    }
+    
+    /* Header */
+    .container-head {
+        padding: 30px 15px;
+    }
+    
+    /* Name and title scaling */
+    #nome, #sobrenome {
+        font-size: 28px;
+        letter-spacing: 6px;
+    }
+    
+    #dev {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    
+    #img-perfil {
+        width: 150px;
+    }
+    
+    /* Navigation */
+    nav a {
+        display: block;
+        margin: 8px 0;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    
+    /* Titles */
+    .titulo-career, .titulo-port, .titulo-clients {
+        font-size: 24px;
+        letter-spacing: 4px;
+        margin-top: 20px;
+    }
+    
+    /* Tabs */
+    .tab button {
+        min-width: 100px;
+        padding: 8px 5px;
+        font-size: 11px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    /* Content */
+    .tab-content1 {
+        font-size: 12px;
+    }
+    
+    .textPort {
+        font-size: 12px;
+    }
+    
+    /* Buttons */
+    .btn {
+        width: 100%;
+        font-size: 12px;
+        height: auto;
+        padding: 10px;
+    }
+    
+    /* Data attributes */
+    .dataCareer {
+        font-size: 8px;
+    }
+    
+    /* Links */
+    #portfolio-link > a {
+        font-size: 14px;
+    }
+    
+    /* Remove fixed positions */
+    .linkedin, .git {
+        position: relative;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    
+    /* Margins and padding cleanup */
+    .col-8.m-auto {
+        margin: 0 !important;
+        padding: 0 15px;
+    }
+    
+    .col-lg-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Extra small screens (320px and up) */
+@media (max-width: 320px) {
+    #nome, #sobrenome {
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+    
+    #dev {
+        font-size: 12px;
+    }
+    
+    .tab button {
+        font-size: 10px;
+        min-width: 80px;
+    }
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 992px) {
+    .container-head {
+        height: 100vh;
+    }
+    
+    .container-career {
+        height: 100vh;
+    }
+    
+    #container-portfolio {
+        height: 100vh;
+    }
+    
+    /* Ensure proper flex layouts on desktop */
+    .d-md-row {
+        display: flex;
+        flex-direction: row;
+    }
+}

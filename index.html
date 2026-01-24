@@ -29,14 +29,14 @@
                 <section class="d-flex flex-column container-head justify-content-center align-items-center">
 
                     <!-- Navigation -->
-                    <div class="container d-flex flex-row justify-content-center mb-5">
-                        <div class="perfil col-5">
+                    <div class="container-fluid d-flex flex-column flex-md-row justify-content-center mb-5">
+                        <div class="perfil col-12 col-md-5 text-center text-md-left">
                             <div class="svgBolinha"></div>
                             <div class="svgBolinha2"></div>
-                            <img src="img/profile/img_profile.jpg" class="mt-4" id="img-perfil">
+                            <img src="img/profile/img_profile.jpg" class="mt-4" id="img-perfil" alt="Profile">
 
                         </div>
-                        <div class="col-3 mt-4">
+                        <div class="col-12 col-md-3 mt-4 text-center text-md-left">
                             <nav>
                                 <a id="career" class="mr-3" href="#about">CARREIRA</a>
                                 <a id="portfolio" class="mr-3" href="#portf">APPS</a>
@@ -50,9 +50,9 @@
                             <span class="pt-5" id="dev">MOBILE SOFTWARE DEVELOPER</span>
                             <div class="mt-4">
                                 <!--LINKEDIN-->
-                                <a class="mr-3" href="https://www.linkedin.com/in/chrystian-salgado-025769a6/"><img class="linkedin" src="img/perfil/ic_linkedin/ic_linkedin.png"></a>
+                                <a class="mr-3" href="https://www.linkedin.com/in/chrystian-salgado-025769a6/"><img class="linkedin" src="img/perfil/ic_linkedin/ic_linkedin.png" alt="LinkedIn"></a>
                                 <!--GIT-->
-                                <a href="https://github.com/salllgado"><img class="git" src="img/perfil/ic_github/ic_github.png"></a>
+                                <a href="https://github.com/salllgado"><img class="git" src="img/perfil/ic_github/ic_github.png" alt="GitHub"></a>
                             </div>
 
                         </div>
@@ -68,7 +68,7 @@
             <section class="container-career">
                 <!-- About -->
                 <section class="page-section" id="about">
-                    <div class="col-8 m-auto">
+                    <div class="col-12 col-lg-8 m-auto px-3 px-md-0">
                         <div class="row">
                             <div class="col-lg-12 text-center">
                                 <h2 class="titulo-career">CARREIRA</h2>
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-3 ">
+                            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
                                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <a class="nav-link active" id="v-pills-luizalabs-tab" data-toggle="pill" href="#v-pills-luizalabs" role="tab" aria-controls="v-pills-luizalabs" aria-selected="true" style="background-color: #121212">Luizalabs<br><span class="dataCareer" id="datluizalabs">Julho 2024 - Presente</span></a>
                                     <a class="nav-link" id="v-pills-madeinweb-tab2" data-toggle="pill" href="#v-pills-home2" role="tab" aria-controls="v-pills-home2" aria-selected="false" style="background-color: #121212">MadeInWeb e Mobile<br><span class="dataCareer" id="datibm">Outubro 2022 - Junho 2024</span></a>
@@ -87,7 +87,7 @@
                                     <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false" style="background-color: #121212">Qranio<br><span class="dataCareer" id="datform">Outubro 2017 - Fevereiro 2019</span></a>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-12 col-lg-9">
                                 <div class="tab-content tab-content1" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active text-light" id="v-pills-luizalabs" role="tabpanel" aria-labelledby="v-pills-luizalabs-tab">
                                         Trabalhando no projeto da netshoes
@@ -124,15 +124,15 @@
         <div class="section" data-hash="c" id="port" style="background: #191919">
 
             <section id="container-portfolio">
-                <div class="col-8 m-auto">
+                <div class="col-12 col-lg-8 m-auto px-3 px-md-0">
 
                     <section class="page-section" id="portf">
-                        <div class="col-lg-12 text-center">
+                        <div class="col-12 text-center">
                             <h2 class="titulo-port">APPS</h2>
                             <br>
                             <br>
                         </div>
-                        <div class="container" id="verticalMenu">
+                        <div class="container-fluid" id="verticalMenu">
                             <div class="tab">
                                 <button class="tablinks how" onclick="openCity(event, 'How')" style="color: #FCB525">YClipboard</button>
                                 <button class="tablinks how2" onclick="openCity(event, 'How2')" style="color: #FCB525">Comprinhas - iOS</button>
@@ -272,6 +272,22 @@
                 // Hide all tab-panes and show the relevant one
                 $(".tab-pane").removeClass("show active");
                 $(targetPaneId).addClass("show active");
+                
+                // Smooth scroll on mobile
+                if (window.innerWidth < 768) {
+                    setTimeout(function() {
+                        clickedLink.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            });
+            
+            // Mobile-friendly tab switching for portfolio
+            $(".tablinks").on("click", function() {
+                if (window.innerWidth < 768) {
+                    setTimeout(function() {
+                        $(".tabcontent:visible").scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
             });
         });
     </script>
