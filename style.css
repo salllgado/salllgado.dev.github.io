@@ -555,7 +555,7 @@ html {
     #career, #portfolio, #clients {
         display: block;
         margin: 10px 0;
-        font-size: 14px;
+        font-size: 16px;
     }
     
     /* Name and title */
@@ -728,7 +728,7 @@ html {
     /* Data career span */
     .dataCareer {
         display: block;
-        font-size: 9px;
+        font-size: 12px;
         letter-spacing: 0.8px;
     }
 }
@@ -786,21 +786,21 @@ html {
     .tab button {
         min-width: 100px;
         padding: 8px 5px;
-        font-size: 11px;
+        font-size: 12px;
     }
     
     .nav-link {
-        font-size: 12px;
+        font-size: 14px;
         padding: 8px;
     }
     
     /* Content */
     .tab-content1 {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .textPort {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     /* Buttons */
@@ -813,7 +813,7 @@ html {
     
     /* Data attributes */
     .dataCareer {
-        font-size: 8px;
+        font-size: 12px;
     }
     
     /* Links */
