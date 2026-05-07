@@ -50,6 +50,7 @@
                             <nav>
                                 <a id="career" class="mr-3" href="#about" data-i18n="nav.career">CARREIRA</a>
                                 <a id="portfolio" class="mr-3" href="#portf" data-i18n="nav.apps">APPS</a>
+                                <a id="courses" class="mr-3" href="#courses-section" data-i18n="nav.courses">CURSOS</a>
                             </nav>
                             <div class="mt-5 pt-3 mb-4">
                                 <span id="nome">CHRYSTIAN</span>
@@ -311,7 +312,35 @@
                 </script>
             </section>
         </div>
-        <div class="section" data-hash="d" style="background: #121212">
+
+        <!-- COURSES SECTION -->
+        <div class="section" data-hash="d" style="background: #242424">
+            <section class="container-career">
+                <section class="page-section" id="courses-section">
+                    <div class="col-12 col-lg-10 m-auto px-3 px-md-0">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h2 class="titulo-career" data-i18n="courses.title">CURSOS</h2>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="courses-container" id="courses-container">
+                                <!-- Featured course (left) -->
+                                <div class="courses-featured" id="featured-course"></div>
+                                
+                                <!-- Courses list (right) -->
+                                <div class="courses-list" id="courses-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="rolar float-left"><a href="#contact" id="rolarbaixo-courses"><span data-i18n="scroll.down">Role para baixo</span> <img src="img/svgs/Caminho6.svg"></a></div>
+        </div>
+
+        <div class="section" data-hash="e" style="background: #121212">
 
             <section class="container-career">
                 <!-- Contact -->
@@ -432,6 +461,44 @@
                     }, 100);
                 }
             });
+        });
+    </script>
+    <script>
+        // Load and render courses
+        function loadCourses() {
+            $.getJSON('courses.json', function(data) {
+                if (data.courses && data.courses.length > 0) {
+                    // Featured course (first item)
+                    const featured = data.courses[0];
+                    const featuredHtml = `
+                        <a href="${featured.link}" target="_blank" rel="noopener noreferrer">
+                            <img src="${featured.thumbnail}" alt="${featured.title}" class="featured-thumbnail" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22225%22%3E%3Crect fill=%22%23444%22 width=%22400%22 height=%22225%22/%3E%3Ctext fill=%22%23999%22 font-size=%2216%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage not available%3C/text%3E%3C/svg%3E'">
+                            <h3 class="featured-title">${featured.title}</h3>
+                        </a>
+                    `;
+                    $('#featured-course').html(featuredHtml);
+                    
+                    // Courses list (items 1-5)
+                    let listHtml = '';
+                    for (let i = 1; i < Math.min(6, data.courses.length); i++) {
+                        const course = data.courses[i];
+                        listHtml += `
+                            <a href="${course.link}" target="_blank" rel="noopener noreferrer" class="course-list-item">
+                                <img src="${course.thumbnail}" alt="${course.title}" class="list-thumbnail" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%2275%22%3E%3Crect fill=%22%23444%22 width=%22100%22 height=%2275%22/%3E%3Ctext fill=%22%23999%22 font-size=%2210%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EN/A%3C/text%3E%3C/svg%3E'">
+                                <p class="list-title">${course.title}</p>
+                            </a>
+                        `;
+                    }
+                    $('#courses-list').html(listHtml);
+                }
+            }).fail(function() {
+                console.error('Erro ao carregar courses.json');
+            });
+        }
+        
+        // Load courses when page is ready
+        $(document).ready(function() {
+            loadCourses();
         });
     </script>
     <script>

@@ -1,0 +1,16 @@
+{
+  "courses": [
+    {
+      "id": "hotmart-002",
+      "title": "Comunidade masterclass em desenvolvimento iOS",
+      "thumbnail": "mentoria_img.png",
+      "link": "https://pay.hotmart.com/G104689316H?checkoutMode=10&bid=1778152650760"
+    },
+    {
+      "id": "udemy-001",
+      "title": "Crie o App de Lista de Filme para iOS SwiftUI/UIKit",
+      "thumbnail": "curso_ios_entrevista.png",
+      "link": "https://www.udemy.com/course/crie-o-app-de-lista-de-filme-para-ios-swiftui-uikit-ios-26/?referralCode=6B9C366ED770659128F7"
+    }
+  ]
+}
