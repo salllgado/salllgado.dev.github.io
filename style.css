@@ -71,6 +71,12 @@ body {
     padding: 80px 24px;
 }
 
+/* == Section Wrapper Fix == */
+.section {
+    min-height: 100vh;
+    height: auto !important;
+}
+
 /* == Section Header with Number == */
 .section-header {
     text-align: left;
