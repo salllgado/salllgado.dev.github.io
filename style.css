@@ -184,18 +184,18 @@ body {
 }
 
 .profile-image-wrapper {
-    width: 240px;
+    width: 200px;
     height: 240px;
-    border-radius: 50%;
+    border-radius: 18px;
     overflow: hidden;
-    border: 3px solid var(--color-gold);
+    border: none;
     box-shadow: var(--shadow-card);
 }
 
 .profile-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: var(--transition-smooth);
 }
 
@@ -1131,5 +1131,4 @@ body {
 
 /* Hide old scroll elements */
 .rolar {
-    display: none;
-}
+    display: none

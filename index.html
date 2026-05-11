@@ -941,22 +941,21 @@
         </script>
         <script>
             $(function () {
-                // Initial display setup (Luizalabs as first)
-                $(".dataCareer").hide();
-                $("#datluizalabs").show();
+                    // Initial display setup (Localiza as first)
+                    $(".dataCareer").hide();
+                    $("#datlocaliza").show();
 
-                // Ensure all nav-links are inactive and only Luizalabs is active initially
-                $(".nav-link")
-                    .removeClass("active")
-                    .attr("aria-selected", "false");
-                $("#v-pills-luizalabs-tab")
-                    .addClass("active")
-                    .attr("aria-selected", "true");
+                    // Ensure all nav-links are inactive and only Localiza is active initially
+                    $(".nav-link")
+                        .removeClass("active")
+                        .attr("aria-selected", "false");
+                    $("#v-pills-localiza-tab")
+                        .addClass("active")
+                        .attr("aria-selected", "true");
 
-                // Ensure all tab-panes are hidden and only Luizalabs is shown initially
-                $(".tab-pane").removeClass("show active");
-                $("#v-pills-luizalabs").addClass("show active");
-
+                    // Ensure all tab-panes are hidden and only Localiza is shown initially
+                    $(".tab-pane").removeClass("show active");
+                    $("#v-pills-localiza").addClass("show active");
                 // Attach a single click handler to the parent of the nav-links
                 $("#v-pills-tab").on("click", ".nav-link", function (e) {
                     e.preventDefault(); // Prevent default Bootstrap tab behavior
