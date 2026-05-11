@@ -1,288 +1,695 @@
 <!doctype html>
 <html>
+    <head>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+            charset="utf-8"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Mobile Software Developer | Chrystian Salgado</title>
 
-<head>
-    <meta name=viewport content="width=device-width, initial-scale=1" charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <title>Mobile Software Developer | Chrystian Salgado </title>
+        <!--CSS Bootstrap-->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/smartscroll.css" />
+        <!--JS Bootstrap-->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.3.min.js"
+        ></script>
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!--favicon-->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="e255fea9f35419e6202c3fea16399f57.ico/favicon-32x32.png"
+        />
+    </head>
 
-    <!--CSS Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/smartscroll.css">
-    <!--JS Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!--favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="e255fea9f35419e6202c3fea16399f57.ico/favicon-32x32.png">
-</head>
-
-<body>
-    <!--class="section-wrapper"- serve para fazer a rolagem do scroll-->
-    <div id="problema">
-        <div class="section" data-hash="a" style="background: #191919" id="inicio">
-
-            <div>
-                <section class="d-flex flex-column container-head justify-content-center align-items-center">
-
-                    <!-- Navigation -->
-                    <div class="container-fluid d-flex flex-column flex-md-row justify-content-center mb-5">
-                        <div class="perfil col-12 col-md-5 text-center text-md-left">
-                            <div class="svgBolinha"></div>
-                            <div class="svgBolinha2"></div>
-                            <img src="img/profile/img_profile.jpg" class="mt-4" id="img-perfil" alt="Profile">
-
-                        </div>
-                        <div class="col-12 col-md-3 mt-4 text-center text-md-left position-relative">
-                            <div class="d-flex justify-content-center justify-content-md-end mb-2">
-                                <button id="lang-toggle" class="btn btn-sm">PT-BR</button>
-                            </div>
-                            <nav>
-                                <a id="career" class="mr-3" href="#about" data-i18n="nav.career">CARREIRA</a>
-                                <a id="portfolio" class="mr-3" href="#portf" data-i18n="nav.apps">APPS</a>
-                                <a id="courses" class="mr-3" href="#courses-section" data-i18n="nav.courses">CURSOS</a>
+    <body>
+        <div id="problema">
+            <!-- 01 HERO SECTION -->
+            <div
+                class="section"
+                data-hash="a"
+                style="background: #191919"
+                id="inicio"
+            >
+                <section class="hero-section">
+                    <div class="container-fluid hero-container">
+                        <!-- Header/Navigation -->
+                        <div class="hero-header">
+                            <button
+                                id="lang-toggle"
+                                class="btn btn-sm lang-btn"
+                            >
+                                PT-BR
+                            </button>
+                            <nav class="hero-nav">
+                                <a
+                                    id="career"
+                                    href="#about"
+                                    data-i18n="nav.career"
+                                    >CARREIRA</a
+                                >
+                                <a
+                                    id="portfolio"
+                                    href="#portf"
+                                    data-i18n="nav.apps"
+                                    >APPS</a
+                                >
+                                <a
+                                    id="courses"
+                                    href="#courses-section"
+                                    data-i18n="nav.courses"
+                                    >CURSOS</a
+                                >
                             </nav>
-                            <div class="mt-5 pt-3 mb-4">
-                                <span id="nome">CHRYSTIAN</span>
-                                <br>
-                                <span id="sobrenome">SALGADO</span>
-                                <br>
-                            </div>
-                            <span class="pt-5" id="dev" data-i18n="hero.role">MOBILE SOFTWARE DEVELOPER</span>
-                            <div class="mt-4">
-                                <!--LINKEDIN-->
-                                <a class="mr-3" href="https://www.linkedin.com/in/chrystian-salgado-025769a6/"><img
-                                        class="linkedin" src="img/perfil/ic_linkedin/ic_linkedin.png"
-                                        alt="LinkedIn"></a>
-                                <!--GIT-->
-                                <!-- <a href="https://github.com/salllgado"><img class="git"
-                                        src="img/perfil/ic_github/ic_github.png" alt="GitHub"></a> -->
-                                <a href="https://wa.me/5532999667031?text=Ol%C3%A1%20Chrystian%2C%20estou%20entrando%20em%20contato%20a%20respeito%20dos%20seus%20servi%C3%A7os%20de%20Desenvolvedor%20e%20consultor%20de%20tecnologia."><img class="git"
-                                        src="img/perfil/ic_whatsapp/ic_whatsapp.png" alt="WhatsApp"></a>
-                            </div>
-
                         </div>
 
-                    </div>
+                        <!-- Hero Content -->
+                        <div class="hero-content">
+                            <div class="hero-profile">
+                                <div class="profile-image-wrapper">
+                                    <img
+                                        src="img/profile/img_profile.jpg"
+                                        class="profile-image"
+                                        alt="Chrystian Salgado"
+                                    />
+                                </div>
+                            </div>
+                            <div class="hero-text">
+                                <h1 class="hero-name">
+                                    <span class="hero-name-first"
+                                        >CHRYSTIAN</span
+                                    >
+                                    <span class="hero-name-last">SALGADO</span>
+                                </h1>
+                                <span class="hero-role" data-i18n="hero.role"
+                                    >MOBILE SOFTWARE DEVELOPER</span
+                                >
+                                <div class="hero-social">
+                                    <a
+                                        class="social-link"
+                                        href="https://www.linkedin.com/in/chrystian-salgado-025769a6/"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            class="social-icon"
+                                            src="img/perfil/ic_linkedin/ic_linkedin.png"
+                                            alt="LinkedIn"
+                                        />
+                                    </a>
+                                    <a
+                                        class="social-link"
+                                        href="https://wa.me/5532999667031?text=Ol%C3%A1%20Chrystian%2C%20estou%20entrando%20em%20contato%20a%20respeito%20dos%20seus%20servi%C3%A7os%20de%20Desenvolvedor%20e%20consultor%20de%20tecnologia."
+                                        target="_blank"
+                                    >
+                                        <img
+                                            class="social-icon"
+                                            src="img/perfil/ic_whatsapp/ic_whatsapp.png"
+                                            alt="WhatsApp"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Scroll indicator -->
+                        <div class="scroll-indicator">
+                            <a href="#about" id="rolarbaixo">
+                                <span
+                                    class="scroll-text"
+                                    data-i18n="scroll.down"
+                                    >Role para baixo</span
+                                >
+                                <svg
+                                    class="scroll-arrow"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12 5V19M12 19L5 12M12 19L19 12"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </section>
             </div>
-            <div class="rolar float-left"><a href="#about" id="rolarbaixo"><span data-i18n="scroll.down">Role para
-                        baixo</span> <img src="img/svgs/Caminho6.svg"></a></div>
-        </div>
-        <div class="section" data-hash="b" style="background: #121212">
 
-            <section class="container-career">
-                <!-- About -->
-                <section class="page-section" id="about">
-                    <div class="col-12 col-lg-8 m-auto px-3 px-md-0">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2 class="titulo-career" data-i18n="career.title">CARREIRA</h2>
-                                <br>
-                                <br>
+            <!-- 02 CARREIRA SECTION -->
+            <div class="section" data-hash="b" style="background: #121212">
+                <section class="career-section">
+                    <section class="page-section" id="about">
+                        <div class="container-fluid section-container">
+                            <!-- Section Header -->
+                            <div class="section-header">
+                                <span class="section-number">01</span>
+                                <h2
+                                    class="section-title"
+                                    data-i18n="career.title"
+                                >
+                                    CARREIRA
+                                </h2>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                                    aria-orientation="vertical">
-                                    <a class="nav-link active" id="v-pills-localiza-tab" data-toggle="pill"
-                                        href="#v-pills-localiza" role="tab" aria-controls="v-pills-localiza"
-                                        aria-selected="true" style="background-color: #121212">Localiza&Co<br><span
-                                           class="dataCareer" id="datlocaliza">Abril 2026 - Presente</span></a>
-                                    <a class="nav-link" id="v-pills-luizalabs-tab" data-toggle="pill"
-                                        href="#v-pills-luizalabs" role="tab" aria-controls="v-pills-luizalabs"
-                                        aria-selected="false" style="background-color: #121212">Luizalabs<br><span
-                                           class="dataCareer" id="datluizalabs">Julho 2024 - Março 2026</span></a>
-                                    <a class="nav-link" id="v-pills-madeinweb-tab2" data-toggle="pill"
-                                        href="#v-pills-home2" role="tab" aria-controls="v-pills-home2"
-                                        aria-selected="false" style="background-color: #121212">MadeInWeb e
-                                        Mobile<br><span class="dataCareer" id="datibm">Outubro 2022 - Junho
-                                            2024</span></a>
-                                    <a class="nav-link" id="v-tab-vidalink-tab" data-toggle="pill"
-                                        href="#v-tab-vidalink" role="tab" aria-controls="v-tab-vidalink"
-                                        aria-selected="false" style="background-color: #121212">Vidalink<br><span
-                                            class="dataCareer" id="datMazzatec">Fevereiro 2020 - Outubro 2022</span></a>
-                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
-                                        href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                        aria-selected="false" style="background-color: #121212">James Delivery<br><span
-                                            class="dataCareer" id="datmade">Fevereiro 2021 - Abril 2021</span></a>
-                                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
-                                        href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                        aria-selected="false" style="background-color: #121212">IBM<br><span
-                                            class="dataCareer" id="datgest">Abril 2015 - Março 2017</span></a>
-                                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
-                                        href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                        aria-selected="false" style="background-color: #121212">Qranio<br><span
-                                            class="dataCareer" id="datform">Outubro 2017 - Fevereiro 2019</span></a>
+
+                            <!-- Career Content -->
+                            <div class="career-content">
+                                <div class="career-nav">
+                                    <div
+                                        class="nav flex-column nav-pills"
+                                        id="v-pills-tab"
+                                        role="tablist"
+                                        aria-orientation="vertical"
+                                    >
+                                        <a
+                                            class="nav-link active"
+                                            id="v-pills-localiza-tab"
+                                            data-toggle="pill"
+                                            href="#v-pills-localiza"
+                                            role="tab"
+                                            aria-controls="v-pills-localiza"
+                                            aria-selected="true"
+                                            >Localiza&Co
+                                            <span
+                                                class="dataCareer"
+                                                id="datlocaliza"
+                                                >Abril 2026 - Presente</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="nav-link"
+                                            id="v-pills-luizalabs-tab"
+                                            data-toggle="pill"
+                                            href="#v-pills-luizalabs"
+                                            role="tab"
+                                            aria-controls="v-pills-luizalabs"
+                                            aria-selected="false"
+                                            >Luizalabs
+                                            <span
+                                                class="dataCareer"
+                                                id="datluizalabs"
+                                                >Julho 2024 - Março 2026</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="nav-link"
+                                            id="v-pills-madeinweb-tab2"
+                                            data-toggle="pill"
+                                            href="#v-pills-home2"
+                                            role="tab"
+                                            aria-controls="v-pills-home2"
+                                            aria-selected="false"
+                                            >MadeInWeb e Mobile
+                                            <span class="dataCareer" id="datibm"
+                                                >Outubro 2022 - Junho 2024</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="nav-link"
+                                            id="v-tab-vidalink-tab"
+                                            data-toggle="pill"
+                                            href="#v-tab-vidalink"
+                                            role="tab"
+                                            aria-controls="v-tab-vidalink"
+                                            aria-selected="false"
+                                            >Vidalink
+                                            <span
+                                                class="dataCareer"
+                                                id="datMazzatec"
+                                                >Fevereiro 2020 - Outubro
+                                                2022</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="nav-link"
+                                            id="v-pills-profile-tab"
+                                            data-toggle="pill"
+                                            href="#v-pills-profile"
+                                            role="tab"
+                                            aria-controls="v-pills-profile"
+                                            aria-selected="false"
+                                            >James Delivery
+                                            <span
+                                                class="dataCareer"
+                                                id="datmade"
+                                                >Fevereiro 2021 - Abril
+                                                2021</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="nav-link"
+                                            id="v-pills-messages-tab"
+                                            data-toggle="pill"
+                                            href="#v-pills-messages"
+                                            role="tab"
+                                            aria-controls="v-pills-messages"
+                                            aria-selected="false"
+                                            >IBM
+                                            <span
+                                                class="dataCareer"
+                                                id="datgest"
+                                                >Abril 2015 - Março 2017</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="nav-link"
+                                            id="v-pills-settings-tab"
+                                            data-toggle="pill"
+                                            href="#v-pills-settings"
+                                            role="tab"
+                                            aria-controls="v-pills-settings"
+                                            aria-selected="false"
+                                            >Qranio
+                                            <span
+                                                class="dataCareer"
+                                                id="datform"
+                                                >Outubro 2017 - Fevereiro
+                                                2019</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="career-detail">
+                                    <div
+                                        class="tab-content"
+                                        id="v-pills-tabContent"
+                                    >
+                                        <div
+                                            class="tab-pane fade show active"
+                                            id="v-pills-localiza"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pills-localiza-tab"
+                                            data-i18n-html="career.localiza"
+                                        >
+                                            Trabalhando no desenvolvimento de
+                                            aplicações mobile para Localiza
+                                        </div>
+                                        <div
+                                            class="tab-pane fade"
+                                            id="v-pills-luizalabs"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pills-luizalabs-tab"
+                                            data-i18n-html="career.luizalabs"
+                                        >
+                                            Trabalhando no time de features do
+                                            app Netshoes, dentre as entregas
+                                            constui a nova tela de Reviews,
+                                            novas funcionalidades para home,
+                                            PDP, ajuste na lista de produtos
+                                            para remover espaços em branco na
+                                            célula, melhorias deeplinks. Também
+                                            mentorei os mais juniors e fui
+                                            responsável pela apresentação do
+                                            projeto a novos colaboladores.
+                                        </div>
+                                        <div
+                                            class="tab-pane fade"
+                                            id="v-tab-vidalink"
+                                            role="tabpanel"
+                                            aria-labelledby="v-tab-vidalink-tab"
+                                            data-i18n-html="career.vidalink"
+                                        >
+                                            Na Vidalink fui responsável pela
+                                            manutenção do app, refinamento e
+                                            acompanhamento de features, lider do
+                                            time iOS.
+                                        </div>
+                                        <div
+                                            class="tab-pane fade"
+                                            id="v-pills-home2"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pills-madeinweb-tab"
+                                            data-i18n-html="career.madeinweb"
+                                        >
+                                            Na MadeInWeb coloquei a disposição
+                                            minhas habilidades no
+                                            desenvolvimento de aplicativos para
+                                            iPhone, ajudando o time a criar
+                                            novos apps e soluções para outros
+                                            apps, alguns apps internos, outros
+                                            apps internos para clientes da
+                                            MadeInWeb e outros projetos para
+                                            todos usuários da AppStore. Dentre
+                                            eles projetos para JBS, Interfarma,
+                                            AvatarDaSaúde, Vidalink, Blenders in
+                                            The Grass, Yoou, Universal, 2Step.
+                                        </div>
+                                        <div
+                                            class="tab-pane fade"
+                                            id="v-pills-profile"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pills-profile-tab"
+                                            data-i18n-html="career.james"
+                                        >
+                                            Na minha breve passagem no James eu
+                                            fui ajudei o time com o refactor e
+                                            relifting do aplicativo, para iOS
+                                            visando uma melhora visão das
+                                            entregas entre cliente e entregador,
+                                            e melhorar a visão do usuário dos
+                                            itens no carrinho.
+                                        </div>
+                                        <div
+                                            class="tab-pane fade"
+                                            id="v-pills-messages"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pills-messages-tab"
+                                            data-i18n-html="career.santander"
+                                        >
+                                            Trabalhei no módulo de chat dentro
+                                            do Santander, integrando o mesmo via
+                                            Carthage e Cocoapods com os apps
+                                            Santander Empresas e Santander PF
+                                        </div>
+                                        <div
+                                            class="tab-pane fade"
+                                            id="v-pills-settings"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pills-settings-tab"
+                                            data-i18n-html="career.qranio"
+                                        >
+                                            Atuei como desenvolvedor iOS, onde
+                                            consegui boa parte do meu
+                                            conhecimento em Git e no
+                                            desenvolvimento de aplicativos
+                                            usando Swift e AltoLayout, aprendi e
+                                            implementei técnicas de Teste
+                                            Unitário, e Bando de dados usando o
+                                            Realm, alem de aprender a usar
+                                            Fastlane nos projetos.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-9">
-                                <div class="tab-content tab-content1" id="v-pills-tabContent">
-                                    <div class="tab-pane fade show active text-light" id="v-pills-localiza"
-                                       role="tabpanel" aria-labelledby="v-pills-localiza-tab"
-                                        data-i18n-html="career.localiza">
-                                        Trabalhando no desenvolvimento de aplicações mobile para Localiza
+                        </div>
+                    </section>
+                </section>
+                <div class="scroll-indicator">
+                    <a href="#portf" id="rolarbaixo2">
+                        <span class="scroll-text" data-i18n="scroll.down"
+                            >Role para baixo</span
+                        >
+                        <svg
+                            class="scroll-arrow"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12 5V19M12 19L5 12M12 19L19 12"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 03 PROJETOS EM DESTAQUE SECTION -->
+            <div
+                class="section"
+                data-hash="c"
+                id="port"
+                style="background: #191919"
+            >
+                <section class="portfolio-section">
+                    <div class="container-fluid section-container">
+                        <!-- Section Header -->
+                        <div class="section-header">
+                            <span class="section-number">02</span>
+                            <h2 class="section-title" data-i18n="port.title">
+                                APPS
+                            </h2>
+                            <p class="section-description">
+                                Projetos em destaque
+                            </p>
+                        </div>
+
+                        <!-- Portfolio Content -->
+                        <div class="portfolio-content" id="verticalMenu">
+                            <div class="portfolio-tabs">
+                                <button
+                                    class="tablinks active"
+                                    onclick="openCity(event, 'How')"
+                                    style="color: #fcb525"
+                                    data-i18n="port.yclipboard"
+                                >
+                                    YClipboard
+                                </button>
+                                <button
+                                    class="tablinks"
+                                    onclick="openCity(event, 'How2')"
+                                    style="color: #fcb525"
+                                    data-i18n="port.comprinhas"
+                                >
+                                    Comprinhas - iOS
+                                </button>
+                                <button
+                                    class="tablinks"
+                                    onclick="openCity(event, 'How3')"
+                                    style="color: #fcb525"
+                                    data-i18n="port.yiptv_ios"
+                                >
+                                    YIPTV - iOS/TVOS
+                                </button>
+                                <button
+                                    class="tablinks"
+                                    onclick="openCity(event, 'How4')"
+                                    style="color: #fcb525"
+                                    data-i18n="port.yiptv_android"
+                                >
+                                    YIPTV - AndroidTV
+                                </button>
+                            </div>
+                            <div class="portfolio-detail">
+                                <div id="How" class="tabcontent active">
+                                    <div class="project-card">
+                                        <h3
+                                            class="project-title"
+                                            style="color: #fcb525"
+                                        >
+                                            YClipboard
+                                        </h3>
+                                        <p
+                                            class="project-description"
+                                            data-i18n-html="port.yclipboard.content"
+                                        >
+                                            Este app foi criado para usuários de
+                                            macOS que buscam controle total
+                                            sobre o histórico da área de
+                                            transferência, com praticidade, e
+                                            privacidade. Privacidade em primeiro
+                                            lugar: Todos os dados são
+                                            armazenados localmente, garantindo
+                                            segurança e confidencialidade. Ideal
+                                            para desenvolvedores estudantes e
+                                            qualquer pessoa que queira otimizar
+                                            seu dia a dia no Mac.
+                                        </p>
+                                        <p class="project-cta">
+                                            <strong>Baixe agora mesmo:</strong>
+                                        </p>
+                                        <a
+                                            href="https://apps.apple.com/br/app/yclipboard/id6751497087?l=en-GB&mt=12"
+                                            target="_blank"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary"
+                                                data-i18n="port.download"
+                                            >
+                                                Download App
+                                            </button>
+                                        </a>
                                     </div>
-                                    <div class="tab-pane fade text-light" id="v-pills-luizalabs"
-                                       role="tabpanel" aria-labelledby="v-pills-luizalabs-tab"
-                                        data-i18n-html="career.luizalabs">
-                                        Trabalhando no time de features do app Netshoes, dentre as entregas constui a nova tela de Reviews,
-                                        novas funcionalidades para home, PDP, ajuste na lista de produtos para remover espaços em branco na célula, melhorias deeplinks.
-                                        Também mentorei os mais juniors e fui responsável pela apresentação do projeto a novos colaboladores.
+                                </div>
+                                <div id="How2" class="tabcontent">
+                                    <div class="project-card">
+                                        <h3
+                                            class="project-title"
+                                            style="color: #fcb525"
+                                        >
+                                            Comprinhas - iOS
+                                        </h3>
+                                        <p
+                                            class="project-description"
+                                            data-i18n-html="port.comprinhas.content"
+                                        >
+                                            O app Comprinhas tem como função
+                                            ajudar o usuário a facilitar o fluxo
+                                            de compras do usuário quando o mesmo
+                                            está no supermercado. A idéia é que
+                                            o usuário consiga ver sua lista de
+                                            forma facil do que comprar no app,
+                                            marcar o que ja colocou no carrinho
+                                            e compartilhar para que outras
+                                            pessoas complementem ou acompahem a
+                                            lista de compras em tempo real.
+                                        </p>
+                                        <p class="project-cta">
+                                            <strong
+                                                >Caso necessário o usuário pode
+                                                consultar nosso</strong
+                                            >
+                                            <a
+                                                href="https://firebasestorage.googleapis.com/v0/b/sal0001app.appspot.com/o/Politica%20de%20Privacidade%20do%20App%20Comprinhas.pdf?alt=media&token=5f345f97-ffcb-4858-b797-ce55e3836932"
+                                                target="_blank"
+                                                >termo de privacidade</a
+                                            >
+                                        </p>
+                                        <p class="project-cta">
+                                            <strong>Baixe agora mesmo:</strong>
+                                        </p>
+                                        <a
+                                            href="https://apps.apple.com/us/app/comprinhas/id1562893313"
+                                            target="_blank"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary"
+                                                data-i18n="port.download"
+                                            >
+                                                Download App
+                                            </button>
+                                        </a>
                                     </div>
-                                    <div class="tab-pane fade text-light" id="v-tab-vidalink" role="tabpanel"
-                                        aria-labelledby="v-tab-vidalink-tab" data-i18n-html="career.vidalink">
-                                        Na Vidalink fui responsável pela manutenção do app, refinamento e acompanhamento
-                                        de features, lider do time iOS.
+                                </div>
+                                <div id="How3" class="tabcontent">
+                                    <div class="project-card">
+                                        <h3
+                                            class="project-title"
+                                            style="color: #fcb525"
+                                        >
+                                            YIPTV - iOS/TVOS
+                                        </h3>
+                                        <p
+                                            class="project-description"
+                                            data-i18n-html="port.yiptv_ios.content"
+                                        >
+                                            O app YIPTV é o meu filho mais novo!
+                                            Vindo de uma vontade de criar uma
+                                            experiência melhor, menos poluída e
+                                            'easy to use' dos players M3U eu
+                                            criei esse app. Disponivel para iOS,
+                                            iPadOS e MacOS.
+                                        </p>
+                                        <p class="project-cta">
+                                            <strong
+                                                >Caso necessário o usuário pode
+                                                consultar nosso</strong
+                                            >
+                                            <a
+                                                href="https://firebasestorage.googleapis.com/v0/b/yiptv-d2c22.appspot.com/o/Politica%20de%20Privacidade%20do%20App%20YIPTV.pdf?alt=media&token=522d6019-e906-4ab5-878b-7ed369251ab2"
+                                                target="_blank"
+                                                >termo de privacidade</a
+                                            >
+                                        </p>
+                                        <p class="project-cta">
+                                            <strong>Baixe agora mesmo:</strong>
+                                        </p>
+                                        <a
+                                            href="https://apps.apple.com/us/app/yiptv-player/id1621209639"
+                                            target="_blank"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary"
+                                                data-i18n="port.download"
+                                            >
+                                                Download App
+                                            </button>
+                                        </a>
                                     </div>
-                                    <div class="tab-pane fade text-light" id="v-pills-home2" role="tabpanel"
-                                        aria-labelledby="v-pills-madeinweb-tab" data-i18n-html="career.madeinweb">
-                                        Na MadeInWeb coloquei a disposição minhas habilidades no desenvolvimento de
-                                        aplicativos para iPhone, ajudando o time a criar novos apps e soluções para
-                                        outros apps, alguns apps internos,
-                                        outros apps internos para clientes da MadeInWeb e outros projetos para todos
-                                        usuários da AppStore.
-                                        Dentre eles projetos para JBS, Interfarma, AvatarDaSaúde, Vidalink, Blenders in
-                                        The Grass, Yoou, Universal, 2Step.
-                                    </div>
-                                    <div class="tab-pane fade text-light" id="v-pills-profile" role="tabpanel"
-                                        aria-labelledby="v-pills-profile-tab" data-i18n-html="career.james">
-                                        Na minha breve passagem no James eu fui ajudei o time com o refactor e relifting
-                                        do aplicativo,
-                                        para iOS visando uma melhora visão das entregas entre cliente e entregador, e
-                                        melhorar a visão do usuário dos itens no carrinho.
-                                    </div>
-                                    <div class="tab-pane fade text-light" id="v-pills-messages" role="tabpanel"
-                                        aria-labelledby="v-pills-messages-tab" data-i18n-html="career.santander">
-                                        Trabalhei no módulo de chat dentro do Santander, integrando o mesmo via Carthage
-                                        e Cocoapods com os apps Santander Empresas e Santander PF
-                                    </div>
-                                    <div class="tab-pane fade text-light" id="v-pills-settings" role="tabpanel"
-                                        aria-labelledby="v-pills-settings-tab" data-i18n-html="career.qranio">
-                                        Atuei como desenvolvedor iOS, onde consegui boa parte do meu conhecimento em Git
-                                        e no desenvolvimento de aplicativos usando Swift e AltoLayout,
-                                        aprendi e implementei técnicas de Teste Unitário, e Bando de dados usando o
-                                        Realm, alem de aprender a usar Fastlane nos projetos.
+                                </div>
+                                <div id="How4" class="tabcontent">
+                                    <div class="project-card">
+                                        <h3
+                                            class="project-title"
+                                            style="color: #fcb525"
+                                        >
+                                            YIPTV - Android
+                                        </h3>
+                                        <p
+                                            class="project-description"
+                                            data-i18n-html="port.yiptv_android.content"
+                                        >
+                                            O app YIPTV é o meu filho mais novo!
+                                            Vindo de uma vontade de criar uma
+                                            experiência melhor, menos poluída e
+                                            'easy to use' dos players M3U eu
+                                            criei esse app. Disponivel para
+                                            Android.
+                                        </p>
+                                        <p class="project-cta">
+                                            <strong
+                                                >Caso necessário o usuário pode
+                                                consultar nosso</strong
+                                            >
+                                            <a
+                                                href="https://firebasestorage.googleapis.com/v0/b/yiptv-d2c22.appspot.com/o/Politica%20de%20Privacidade%20do%20App%20YIPTV.pdf?alt=media&token=522d6019-e906-4ab5-878b-7ed369251ab2"
+                                                target="_blank"
+                                                >termo de privacidade</a
+                                            >
+                                        </p>
+                                        <p class="project-cta">
+                                            <strong>Baixe agora mesmo:</strong>
+                                        </p>
+                                        <a
+                                            href="https://play.google.com/store/apps/details?id=com.salgadosproductions.yiptv&pli=1"
+                                            target="_blank"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary"
+                                                data-i18n="port.download"
+                                            >
+                                                Download App
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </section>
-
-            </section>
-            <div class="rolar float-left"><a href="#portf" id="rolarbaixo2"><span data-i18n="scroll.down">Role para
-                        baixo</span> <img src="img/svgs/Caminho6.svg"></a></div>
-        </div>
-        <div class="section" data-hash="c" id="port" style="background: #191919">
-
-            <section id="container-portfolio">
-                <div class="col-12 col-lg-8 m-auto px-3 px-md-0">
-
-                    <section class="page-section" id="portf">
-                        <div class="col-12 text-center">
-                            <h2 class="titulo-port" data-i18n="port.title">APPS</h2>
-                            <br>
-                            <br>
-                        </div>
-                        <div class="container-fluid" id="verticalMenu">
-                            <div class="tab">
-                                <button class="tablinks how" onclick="openCity(event, 'How')" style="color: #FCB525"
-                                    data-i18n="port.yclipboard">YClipboard</button>
-                                <button class="tablinks how2" onclick="openCity(event, 'How2')" style="color: #FCB525"
-                                    data-i18n="port.comprinhas">Comprinhas - iOS</button>
-                                <button class="tablinks how3" onclick="openCity(event, 'How3')" style="color: #FCB525"
-                                    data-i18n="port.yiptv_ios">YIPTV - iOS/TVOS</button>
-                                <button class="tablinks how4" onclick="openCity(event, 'How4')" style="color: #FCB525"
-                                    data-i18n="port.yiptv_android">YIPTV - AndroidTV</button>
-                            </div>
-                            <div id="How" class="tabcontent" data-i18n-html="port.yclipboard.content">
-                                <h3 style="color: #FCB525">YClipboard</h3>
-                                <p class="textPort">
-                                    Este app foi criado para usuários de macOS que buscam controle total sobre o
-                                    histórico da área de transferência, com praticidade, e privacidade.
-
-                                    Privacidade em primeiro lugar: Todos os dados são armazenados localmente, garantindo
-                                    segurança e confidencialidade.
-                                    Ideal para desenvolvedores estudantes e qualquer pessoa que queira otimizar seu dia
-                                    a dia no Mac.
-                                </p>
-                                <p class="textPort"><strong>Baixe agora mesmo:</strong></p>
-                                <a href="https://apps.apple.com/br/app/yclipboard/id6751497087?l=en-GB&mt=12"
-                                    target="_blank"><button type="button" class="btn"
-                                        style="background-color: #FCB525; width: 210px; height: 54px; color: #191919; font-weight: bold"
-                                        data-i18n="port.download">Download App</button></a>
-                            </div>
-                            <div id="How2" class="tabcontent" data-i18n-html="port.comprinhas.content">
-                                <h3 style="color: #FCB525">Comprinhas - iOS</h3>
-                                <p class="textPort">
-                                    O app Comprinhas tem como função ajudar o usuário a facilitar o fluxo de compras do
-                                    usuário quando o mesmo está no supermercado.
-                                    A idéia é que o usuário consiga ver sua lista de forma facil do que comprar no app,
-                                    marcar o que ja colocou no carrinho e compartilhar para que outras pessoas
-                                    complementem ou acompahem a lista de compras em tempo real.
-                                </p>
-                                <p class="textPort"><strong>Caso necessário o usuário pode consultar nosso</strong> <a
-                                        href="https://firebasestorage.googleapis.com/v0/b/sal0001app.appspot.com/o/Politica%20de%20Privacidade%20do%20App%20Comprinhas.pdf?alt=media&token=5f345f97-ffcb-4858-b797-ce55e3836932"
-                                        target="_blank">termo de privacidade</a>
-
-                                </p>
-                                <p class="textPort"><strong>Baixe agora mesmo:</strong></p>
-                                <a href="https://apps.apple.com/us/app/comprinhas/id1562893313" target="_blank"><button
-                                        type="button" class="btn"
-                                        style="background-color: #FCB525; width: 210px; height: 54px; color: #191919; font-weight: bold"
-                                        data-i18n="port.download">Download App</button></a>
-                            </div>
-                            <div id="How3" class="tabcontent" data-i18n-html="port.yiptv_ios.content">
-                                <h3 style="color: #FCB525">YIPTV - iOS/TVOS</h3>
-                                <p class="textPort">
-                                    O app YIPTV é o meu filho mais novo! Vindo de uma vontade de criar uma experiência
-                                    melhor, menos poluída e 'easy to use' dos players M3U eu criei esse app. Disponivel
-                                    para iOS, iPadOS e MacOS.
-                                </p>
-                                <p class="textPort"><strong>Caso necessário o usuário pode consultar nosso</strong> <a
-                                        href="https://firebasestorage.googleapis.com/v0/b/yiptv-d2c22.appspot.com/o/Politica%20de%20Privacidade%20do%20App%20YIPTV.pdf?alt=media&token=522d6019-e906-4ab5-878b-7ed369251ab2"
-                                        target="_blank">termo de privacidade</a></p>
-                                <p class="textPort"><strong>Baixe agora mesmo:</strong></p>
-                                <a href="https://apps.apple.com/us/app/yiptv-player/id1621209639"
-                                    target="_blank"><button type="button" class="btn"
-                                        style="background-color: #FCB525; width: 210px; height: 54px; color: #191919; font-weight: bold"
-                                        data-i18n="port.download">Download App</button></a>
-                            </div>
-                            <div id="How4" class="tabcontent" data-i18n-html="port.yiptv_android.content">
-                                <h3 style="color: #FCB525">YIPTV - Android</h3>
-                                <p class="textPort">
-                                    O app YIPTV é o meu filho mais novo! Vindo de uma vontade de criar uma experiência
-                                    melhor, menos poluída e 'easy to use' dos players M3U eu criei esse app. Disponivel
-                                    para Android.
-                                </p>
-                                <p class="textPort"><strong>Caso necessário o usuário pode consultar nosso</strong> <a
-                                        href="https://firebasestorage.googleapis.com/v0/b/yiptv-d2c22.appspot.com/o/Politica%20de%20Privacidade%20do%20App%20YIPTV.pdf?alt=media&token=522d6019-e906-4ab5-878b-7ed369251ab2"
-                                        target="_blank">termo de privacidade</a></p>
-                                <p class="textPort"><strong>Baixe agora mesmo:</strong></p>
-                                <a href="https://play.google.com/store/apps/details?id=com.salgadosproductions.yiptv&pli=1"
-                                    target="_blank"><button type="button" class="btn"
-                                        style="background-color: #FCB525; width: 210px; height: 54px; color: #191919; font-weight: bold"
-                                        data-i18n="port.download">Download App</button></a>
-                            </div>
-                        </div>
-
-                    </section>
-
-                </div>
 
                 <script>
                     $("#verticalMenu").css("display", "block");
@@ -294,260 +701,409 @@
                         var i, tabcontent, tablinks;
 
                         // Get all elements with class="tabcontent" and hide them
-                        tabcontent = document.getElementsByClassName("tabcontent");
+                        tabcontent =
+                            document.getElementsByClassName("tabcontent");
                         for (i = 0; i < tabcontent.length; i++) {
                             tabcontent[i].style.display = "none";
+                            tabcontent[i].classList.remove("active");
                         }
 
                         // Get all elements with class="tablinks" and remove the class "active"
                         tablinks = document.getElementsByClassName("tablinks");
                         for (i = 0; i < tablinks.length; i++) {
-                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            tablinks[i].className = tablinks[
+                                i
+                            ].className.replace(" active", "");
                         }
 
                         // Show the current tab, and add an "active" class to the link that opened the tab
-                        document.getElementById(cityName).style.display = "block";
+                        document.getElementById(cityName).style.display =
+                            "block";
+                        document
+                            .getElementById(cityName)
+                            .classList.add("active");
                         evt.currentTarget.className += " active";
                     }
                 </script>
-            </section>
-        </div>
+                <div class="scroll-indicator">
+                    <a href="#courses-section" id="rolarbaixo3">
+                        <span class="scroll-text" data-i18n="scroll.down"
+                            >Role para baixo</span
+                        >
+                        <svg
+                            class="scroll-arrow"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12 5V19M12 19L5 12M12 19L19 12"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-        <!-- COURSES SECTION -->
-        <div class="section" data-hash="d" style="background: #242424">
-            <section class="container-career">
-                <section class="page-section" id="courses-section">
-                    <div class="col-12 col-lg-10 m-auto px-3 px-md-0">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2 class="titulo-career" data-i18n="courses.title">CURSOS</h2>
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="courses-container" id="courses-container">
-                                <!-- Featured course (left) -->
-                                <div class="courses-featured" id="featured-course"></div>
-                                
-                                <!-- Courses list (right) -->
-                                <div class="courses-list" id="courses-list"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <div class="rolar float-left"><a href="#contact" id="rolarbaixo-courses"><span data-i18n="scroll.down">Role para baixo</span> <img src="img/svgs/Caminho6.svg"></a></div>
-        </div>
-
-        <div class="section" data-hash="e" style="background: #121212">
-
-            <section class="container-career">
-                <!-- Contact -->
-                <section class="page-section" id="contact">
-                    <div class="col-12 col-lg-8 m-auto px-3 px-md-0">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2 class="titulo-career" data-i18n="contact.title">CONTATO</h2>
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <p class="textPort" data-i18n="contact.description">
-                                    Precisando conversar sobre uma ideia ou desenvolver um app para android e / ou ios
-                                    entre em contato comigo
+            <!-- 04 CURSOS SECTION -->
+            <div class="section" data-hash="d" style="background: #121212">
+                <section class="courses-section">
+                    <section class="page-section" id="courses-section">
+                        <div class="container-fluid section-container">
+                            <!-- Section Header -->
+                            <div class="section-header">
+                                <span class="section-number">03</span>
+                                <h2
+                                    class="section-title"
+                                    data-i18n="courses.title"
+                                >
+                                    CURSOS
+                                </h2>
+                                <p class="section-description">
+                                    Conteúdo em destaque
                                 </p>
-                                <br>
-                                <br>
+                            </div>
+
+                            <!-- Courses Content -->
+                            <div class="courses-content">
                                 <div
-                                    class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
-                                    <div class="contact-item" style="margin: 10px;">
-                                        <a href="https://wa.me/5532999667031" target="_blank">
-                                            <button type="button" class="btn"
-                                                style="background-color: #FCB525; width: 210px; min-width: 210px; max-width: 210px; height: 54px; color: #191919; font-weight: bold"
-                                                data-i18n="contact.whatsapp">WhatsApp</button>
+                                    class="courses-container"
+                                    id="courses-container"
+                                >
+                                    <!-- Featured course (left) -->
+                                    <div
+                                        class="courses-featured"
+                                        id="featured-course"
+                                    ></div>
+
+                                    <!-- Courses list (right) -->
+                                    <div
+                                        class="courses-list"
+                                        id="courses-list"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <div class="scroll-indicator">
+                    <a href="#contact" id="rolarbaixo-courses">
+                        <span class="scroll-text" data-i18n="scroll.down"
+                            >Role para baixo</span
+                        >
+                        <svg
+                            class="scroll-arrow"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12 5V19M12 19L5 12M12 19L19 12"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 05 CONTATO SECTION -->
+            <div class="section" data-hash="e" style="background: #191919">
+                <section class="contact-section">
+                    <section class="page-section" id="contact">
+                        <div class="container-fluid section-container">
+                            <!-- Section Header -->
+                            <div class="section-header">
+                                <span class="section-number">04</span>
+                                <h2
+                                    class="section-title"
+                                    data-i18n="contact.title"
+                                >
+                                    CONTATO
+                                </h2>
+                                <p class="section-description">
+                                    Onde acompanhar
+                                </p>
+                            </div>
+
+                            <!-- Contact Content -->
+                            <div class="contact-content">
+                                <div class="contact-info">
+                                    <p
+                                        class="contact-description"
+                                        data-i18n="contact.description"
+                                    >
+                                        Precisando conversar sobre uma ideia ou
+                                        desenvolver um app para android e / ou
+                                        ios entre em contato comigo
+                                    </p>
+                                    <div class="contact-buttons">
+                                        <a
+                                            href="https://wa.me/5532999667031"
+                                            target="_blank"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary btn-contact"
+                                                data-i18n="contact.whatsapp"
+                                            >
+                                                WhatsApp
+                                            </button>
                                         </a>
-                                    </div>
-                                    <div class="contact-item" style="margin: 10px;">
                                         <a href="mailto:salgado.dev@gmail.com">
-                                            <button type="button" class="btn"
-                                                style="background-color: #FCB525; width: 210px; min-width: 210px; max-width: 210px; height: 54px; color: #191919; font-weight: bold"
-                                                data-i18n="contact.email">Email</button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary btn-contact"
+                                                data-i18n="contact.email"
+                                            >
+                                                Email
+                                            </button>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+                    </section>
                 </section>
 
-            </section>
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <div class="footer-actions">
+                            <a
+                                href="#inicio"
+                                id="back-to-top"
+                                class="back-to-top"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12 19V5M12 5L5 12M12 5L19 12"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="footer-copyright">
+                            © 2025 Chrystian Salgado. Todos os direitos
+                            reservados.
+                        </p>
+                    </div>
+                </footer>
+            </div>
         </div>
-    </div>
-    <script type="text/javascript" src="files/bower_components/lethargy/lethargy.min.js"></script>
-    <script type="text/javascript" src="js/smartscroll.js"></script>
-    <script type="text/javascript" src="/scriptmenu.js"></script>
-    <script>
-        $.smartscroll();
-    </script>
-    <script>
-        $(function () {
-            $(".tab").mouseenter(disableScrolling);
-            $(".tab").mouseleave(enableScrolling)
-        })
 
-        function disableScrolling() {
-            var x = window.scrollX;
-            var y = window.scrollY;
-            window.onscroll = function () {
-                window.scrollTo(x, y);
-            };
-        }
+        <!-- Scripts -->
+        <script
+            type="text/javascript"
+            src="files/bower_components/lethargy/lethargy.min.js"
+        ></script>
+        <script type="text/javascript" src="js/smartscroll.js"></script>
+        <script type="text/javascript" src="/scriptmenu.js"></script>
+        <script>
+            $.smartscroll();
+        </script>
+        <script>
+            $(function () {
+                $(".tab").mouseenter(disableScrolling);
+                $(".tab").mouseleave(enableScrolling);
+            });
+        </script>
+        <script>
+            function disableScrolling() {
+                var x = window.scrollX;
+                var y = window.scrollY;
+                window.onscroll = function () {
+                    window.scrollTo(x, y);
+                };
+            }
 
-        function enableScrolling() {
-            window.onscroll = function () { };
-        }
-    </script>
-    <script>
-        $(function () {
-            // Initial display setup (Luizalabs as first)
-            $(".dataCareer").hide();
-            $("#datluizalabs").show();
-
-            // Ensure all nav-links are inactive and only Luizalabs is active initially
-            $(".nav-link").removeClass("active").attr("aria-selected", "false");
-            $("#v-pills-luizalabs-tab").addClass("active").attr("aria-selected", "true");
-
-            // Ensure all tab-panes are hidden and only Luizalabs is shown initially
-            $(".tab-pane").removeClass("show active");
-            $("#v-pills-luizalabs").addClass("show active");
-
-            // Attach a single click handler to the parent of the nav-links
-            $("#v-pills-tab").on("click", ".nav-link", function (e) {
-                e.preventDefault(); // Prevent default Bootstrap tab behavior
-                var clickedLink = $(this);
-                var targetPaneId = clickedLink.attr("href"); // e.g., "#v-pills-luizalabs"
-                var targetDataCareerId = clickedLink.find(".dataCareer").attr("id"); // e.g., "datluizalabs"
-
-                // Remove active state from all nav-links
-                $(".nav-link").removeClass("active").attr("aria-selected", "false");
-                // Add active state to the clicked nav-link
-                clickedLink.addClass("active").attr("aria-selected", "true");
-
-                // Hide all dataCareer spans and show the relevant one
+            function enableScrolling() {
+                window.onscroll = function () {};
+            }
+        </script>
+        <script>
+            $(function () {
+                // Initial display setup (Luizalabs as first)
                 $(".dataCareer").hide();
-                $("#" + targetDataCareerId).show();
+                $("#datluizalabs").show();
 
-                // Hide all tab-panes and show the relevant one
+                // Ensure all nav-links are inactive and only Luizalabs is active initially
+                $(".nav-link")
+                    .removeClass("active")
+                    .attr("aria-selected", "false");
+                $("#v-pills-luizalabs-tab")
+                    .addClass("active")
+                    .attr("aria-selected", "true");
+
+                // Ensure all tab-panes are hidden and only Luizalabs is shown initially
                 $(".tab-pane").removeClass("show active");
-                $(targetPaneId).addClass("show active");
+                $("#v-pills-luizalabs").addClass("show active");
 
-                // Smooth scroll on mobile
-                if (window.innerWidth < 768) {
-                    setTimeout(function () {
-                        clickedLink.scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                }
-            });
+                // Attach a single click handler to the parent of the nav-links
+                $("#v-pills-tab").on("click", ".nav-link", function (e) {
+                    e.preventDefault(); // Prevent default Bootstrap tab behavior
+                    var clickedLink = $(this);
+                    var targetPaneId = clickedLink.attr("href"); // e.g., "#v-pills-luizalabs"
+                    var targetDataCareerId = clickedLink
+                        .find(".dataCareer")
+                        .attr("id"); // e.g., "datluizalabs"
 
-            // Mobile-friendly tab switching for portfolio
-            $(".tablinks").on("click", function () {
-                if (window.innerWidth < 768) {
-                    setTimeout(function () {
-                        $(".tabcontent:visible").scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                }
+                    // Remove active state from all nav-links
+                    $(".nav-link")
+                        .removeClass("active")
+                        .attr("aria-selected", "false");
+                    // Add active state to the clicked nav-link
+                    clickedLink
+                        .addClass("active")
+                        .attr("aria-selected", "true");
+
+                    // Hide all dataCareer spans and show the relevant one
+                    $(".dataCareer").hide();
+                    $("#" + targetDataCareerId).show();
+
+                    // Hide all tab-panes and show the relevant one
+                    $(".tab-pane").removeClass("show active");
+                    $(targetPaneId).addClass("show active");
+
+                    // Smooth scroll on mobile
+                    if (window.innerWidth < 768) {
+                        setTimeout(function () {
+                            clickedLink.scrollIntoView({ behavior: "smooth" });
+                        }, 100);
+                    }
+                });
+
+                // Mobile-friendly tab switching for portfolio
+                $(".tablinks").on("click", function () {
+                    if (window.innerWidth < 768) {
+                        setTimeout(function () {
+                            $(".tabcontent:visible").scrollIntoView({
+                                behavior: "smooth",
+                            });
+                        }, 100);
+                    }
+                });
             });
-        });
-    </script>
-    <script>
-        // Load and render courses
-        function loadCourses() {
-            $.getJSON('courses.json', function(data) {
-                if (data.courses && data.courses.length > 0) {
-                    // Featured course (first item)
-                    const featured = data.courses[0];
-                    const featuredHtml = `
+        </script>
+        <script>
+            // Load and render courses
+            function loadCourses() {
+                $.getJSON("courses.json", function (data) {
+                    if (data.courses && data.courses.length > 0) {
+                        // Featured course (first item)
+                        const featured = data.courses[0];
+                        const featuredHtml = `
                         <a href="${featured.link}" target="_blank" rel="noopener noreferrer">
                             <img src="${featured.thumbnail}" alt="${featured.title}" class="featured-thumbnail" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22225%22%3E%3Crect fill=%22%23444%22 width=%22400%22 height=%22225%22/%3E%3Ctext fill=%22%23999%22 font-size=%2216%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EImage not available%3C/text%3E%3C/svg%3E'">
                             <h3 class="featured-title">${featured.title}</h3>
                         </a>
                     `;
-                    $('#featured-course').html(featuredHtml);
-                    
-                    // Courses list (items 1-5)
-                    let listHtml = '';
-                    for (let i = 1; i < Math.min(6, data.courses.length); i++) {
-                        const course = data.courses[i];
-                        listHtml += `
+                        $("#featured-course").html(featuredHtml);
+
+                        // Courses list (items 1-5)
+                        let listHtml = "";
+                        for (
+                            let i = 1;
+                            i < Math.min(6, data.courses.length);
+                            i++
+                        ) {
+                            const course = data.courses[i];
+                            listHtml += `
                             <a href="${course.link}" target="_blank" rel="noopener noreferrer" class="course-list-item">
                                 <img src="${course.thumbnail}" alt="${course.title}" class="list-thumbnail" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%2275%22%3E%3Crect fill=%22%23444%22 width=%22100%22 height=%2275%22/%3E%3Ctext fill=%22%23999%22 font-size=%2210%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EN/A%3C/text%3E%3C/svg%3E'">
                                 <p class="list-title">${course.title}</p>
                             </a>
                         `;
+                        }
+                        $("#courses-list").html(listHtml);
                     }
-                    $('#courses-list').html(listHtml);
-                }
-            }).fail(function() {
-                console.error('Erro ao carregar courses.json');
-            });
-        }
-        
-        // Load courses when page is ready
-        $(document).ready(function() {
-            loadCourses();
-        });
-    </script>
-    <script>
-        (function () {
-            // Load translations from external JSON and apply them
-            function applyTranslations(lang, data) {
-                if (!data) return;
-                document.querySelectorAll('[data-i18n]').forEach(function (el) {
-                    var key = el.getAttribute('data-i18n');
-                    if (data[key]) el.textContent = data[key];
-                });
-                document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
-                    var key = el.getAttribute('data-i18n-html');
-                    if (data[key]) el.innerHTML = data[key];
-                });
-                var btn = document.getElementById('lang-toggle');
-                if (btn) btn.textContent = (lang === 'pt-BR') ? 'PT-BR' : 'EN';
-                localStorage.setItem('site_lang', lang);
-            }
-
-            function loadLang(lang) {
-                var path = 'translations/' + lang + '.json';
-                return fetch(path).then(function (res) {
-                    if (!res.ok) throw new Error('Failed to load ' + path);
-                    return res.json();
-                }).then(function (data) {
-                    applyTranslations(lang, data);
-                }).catch(function (err) {
-                    console.error(err);
+                }).fail(function () {
+                    console.error("Erro ao carregar courses.json");
                 });
             }
 
-            var stored = localStorage.getItem('site_lang');
-            var initial = stored || (navigator.language && navigator.language.toLowerCase().indexOf('pt') === 0 ? 'pt-BR' : 'en');
-            document.addEventListener('DOMContentLoaded', function () {
-                loadLang(initial);
+            // Load courses when page is ready
+            $(document).ready(function () {
+                loadCourses();
             });
-
-            document.addEventListener('click', function (e) {
-                if (e.target && e.target.id === 'lang-toggle') {
-                    var current = localStorage.getItem('site_lang') || initial;
-                    var next = (current === 'pt-BR') ? 'en' : 'pt-BR';
-                    loadLang(next);
+        </script>
+        <script>
+            (function () {
+                // Load translations from external JSON and apply them
+                function applyTranslations(lang, data) {
+                    if (!data) return;
+                    document
+                        .querySelectorAll("[data-i18n]")
+                        .forEach(function (el) {
+                            var key = el.getAttribute("data-i18n");
+                            if (data[key]) el.textContent = data[key];
+                        });
+                    document
+                        .querySelectorAll("[data-i18n-html]")
+                        .forEach(function (el) {
+                            var key = el.getAttribute("data-i18n-html");
+                            if (data[key]) el.innerHTML = data[key];
+                        });
+                    var btn = document.getElementById("lang-toggle");
+                    if (btn)
+                        btn.textContent = lang === "pt-BR" ? "PT-BR" : "EN";
+                    localStorage.setItem("site_lang", lang);
                 }
-            });
-        })();
-    </script>
-    </div>
-    <span class="clear"></span>
-</body>
 
+                function loadLang(lang) {
+                    var path = "translations/" + lang + ".json";
+                    return fetch(path)
+                        .then(function (res) {
+                            if (!res.ok)
+                                throw new Error("Failed to load " + path);
+                            return res.json();
+                        })
+                        .then(function (data) {
+                            applyTranslations(lang, data);
+                        })
+                        .catch(function (err) {
+                            console.error(err);
+                        });
+                }
+
+                var stored = localStorage.getItem("site_lang");
+                var initial =
+                    stored ||
+                    (navigator.language &&
+                    navigator.language.toLowerCase().indexOf("pt") === 0
+                        ? "pt-BR"
+                        : "en");
+                document.addEventListener("DOMContentLoaded", function () {
+                    loadLang(initial);
+                });
+
+                document.addEventListener("click", function (e) {
+                    if (e.target && e.target.id === "lang-toggle") {
+                        var current =
+                            localStorage.getItem("site_lang") || initial;
+                        var next = current === "pt-BR" ? "en" : "pt-BR";
+                        loadLang(next);
+                    }
+                });
+            })();
+        </script>
+    </body>
 </html>

@@ -1,0 +1,24 @@
+# Project Rules
+
+- Always follow the SOLID principles:
+  - Single Responsibility: Each class or module must have one clear purpose.
+  - Open/Closed: Code should be open for extension but closed for modification.
+  - Liskov Substitution: Subtypes must be replaceable without breaking functionality.
+  - Interface Segregation: Prefer small, specific interfaces over large, general ones.
+  - Dependency Inversion: Depend on abstractions, not concrete implementations.
+
+- Maintain clean architecture boundaries:
+  - Do not break the scope of existing files.
+  - Keep business logic separate from UI and infrastructure.
+  - Ensure each layer communicates only through defined interfaces.
+
+- Code style and practices:
+  - Use consistent naming conventions (camelCase for variables, PascalCase for classes).
+  - Write self‑documenting code; avoid unnecessary comments.
+  - Prefer composition over inheritance.
+  - Keep functions small and focused.
+
+- Collaboration:
+  - Document architectural decisions in README or ADR files.
+  - Keep commits small and meaningful.
+  - Review code for adherence to these rules before merging.
