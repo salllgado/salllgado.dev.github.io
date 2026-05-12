@@ -7,6 +7,12 @@
       "link": "https://pay.hotmart.com/G104689316H?checkoutMode=10&bid=1778152650760"
     },
     {
+      "id": "udemy-002",
+      "title": "UIStoryboard e Auto-layout direto ao ponto",
+      "thumbnail": "curso_storyboard.png",
+      "link": "https://www.udemy.com/course/aprenda-manipular-uistoryboard-e-auto-layout-em-um-app-ios/?referralCode=7952B832703E887CD793"
+    },
+    {
       "id": "udemy-001",
       "title": "Crie o App de Lista de Filme para iOS SwiftUI/UIKit",
       "thumbnail": "curso_ios_entrevista.png",
