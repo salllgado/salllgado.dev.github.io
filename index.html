@@ -863,37 +863,6 @@
             $.smartscroll({ sectionWrapperSelector: "#problema" });
         </script>
         <script>
-            var $bodyHtml = $("html, body");
-            function smoothScrollTo(targetSelector, cb) {
-                var $target = $(targetSelector);
-                if ($target.length === 0) return;
-                var targetTop = $target.offset().top;
-                $bodyHtml.stop(true, true).animate(
-                    { scrollTop: targetTop },
-                    500,
-                    function () {
-                        if (window.history && window.history.replaceState) {
-                            window.history.replaceState(null, "", targetSelector);
-                        }
-                        if (cb) cb();
-                    }
-                );
-            }
-
-            $(function () {
-                $("#rolarbaixo, #rolarbaixo2, #rolarbaixo3, #career, #portfolio, #courses, #back-to-top").on(
-                    "click",
-                    function (e) {
-                        e.preventDefault();
-                        var target = $(this).attr("href");
-                        if (target && target.charAt(0) === "#") {
-                            smoothScrollTo(target);
-                        }
-                    }
-                );
-            });
-        </script>
-        <script>
             $(function () {
                 $(".tab").mouseenter(disableScrolling);
                 $(".tab").mouseleave(enableScrolling);
