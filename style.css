@@ -33,8 +33,9 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     font-size: 16px;
+    height: auto;
 }
 
 body {
@@ -44,6 +45,8 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height: auto;
+    overflow-y: visible;
 }
 
 /* == Custom Scrollbar == */
@@ -74,7 +77,7 @@ body {
 /* == Section Wrapper Fix == */
 .section {
     min-height: 100vh;
-    height: auto !important;
+    height: auto;
     position: relative;
 }
 

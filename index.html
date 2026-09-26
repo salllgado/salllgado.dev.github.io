@@ -853,17 +853,31 @@
         </div>
 
         <!-- Scripts -->
-        <script
-            type="text/javascript"
-            src="files/bower_components/lethargy/lethargy.min.js"
-        ></script>
-        <script type="text/javascript" src="js/smartscroll.js"></script>
         <script type="text/javascript" src="/scriptmenu.js"></script>
         <script>
-            $.smartscroll({ sectionWrapperSelector: "#problema" });
-        </script>
-        <script>
             $(function () {
+                var $bodyHtml = $("html, body");
+                function smoothScrollTo(targetSelector) {
+                    var $target = $(targetSelector);
+                    if ($target.length === 0) return;
+                    var targetTop = $target.offset().top;
+                    $bodyHtml.stop(true, true).animate({ scrollTop: targetTop }, 650);
+                }
+
+                $("#rolarbaixo, #rolarbaixo2, #rolarbaixo3, #career, #portfolio, #courses, #back-to-top").on(
+                    "click",
+                    function (e) {
+                        var target = $(this).attr("href");
+                        if (target && target.charAt(0) === "#" && target.length > 1) {
+                            e.preventDefault();
+                            smoothScrollTo(target);
+                            if (window.history && window.history.replaceState) {
+                                history.replaceState(null, "", target);
+                            }
+                        }
+                    }
+                );
+
                 $(".tab").mouseenter(disableScrolling);
                 $(".tab").mouseleave(enableScrolling);
             });
