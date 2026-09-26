@@ -171,9 +171,9 @@
             </div>
 
             <!-- 02 CARREIRA SECTION -->
-            <div class="section" data-hash="b" style="background: #121212">
+            <div class="section" data-hash="b" id="about" style="background: #121212">
                 <section class="career-section">
-                    <section class="page-section" id="about">
+                    <section class="page-section">
                         <div class="container-fluid section-container">
                             <!-- Section Header -->
                             <div class="section-header">
@@ -758,29 +758,7 @@
                         </div>
                     </section>
                 </section>
-                <div class="scroll-indicator">
-                    <a href="#contact" id="rolarbaixo-courses">
-                        <span class="scroll-text" data-i18n="scroll.down"
-                            >Role para baixo</span
-                        >
-                        <svg
-                            class="scroll-arrow"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M12 5V19M12 19L5 12M12 19L19 12"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
-                    </a>
-                </div>
+
             </div>
 
             <!-- 05 CONTATO SECTION -->
@@ -797,9 +775,6 @@
                                 >
                                     CONTATO
                                 </h2>
-                                <p class="section-description">
-                                    Onde acompanhar
-                                </p>
                             </div>
 
                             <!-- Contact Content -->
@@ -838,42 +813,42 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Contact Footer (Back to top + Copyright) -->
+                            <div class="contact-footer">
+                                <div class="footer-content">
+                                    <div class="footer-actions">
+                                        <a
+                                            href="#inicio"
+                                            id="back-to-top"
+                                            class="back-to-top"
+                                        >
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12 19V5M12 5L5 12M12 5L19 12"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <p class="footer-copyright">
+                                        © 2025 Chrystian Salgado. Todos os direitos
+                                        reservados.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </section>
-
-                <!-- Footer -->
-                <footer class="footer">
-                    <div class="footer-content">
-                        <div class="footer-actions">
-                            <a
-                                href="#inicio"
-                                id="back-to-top"
-                                class="back-to-top"
-                            >
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12 19V5M12 5L5 12M12 5L19 12"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
-                        <p class="footer-copyright">
-                            © 2025 Chrystian Salgado. Todos os direitos
-                            reservados.
-                        </p>
-                    </div>
-                </footer>
             </div>
         </div>
 
@@ -885,7 +860,38 @@
         <script type="text/javascript" src="js/smartscroll.js"></script>
         <script type="text/javascript" src="/scriptmenu.js"></script>
         <script>
-            $.smartscroll();
+            $.smartscroll({ sectionWrapperSelector: "#problema" });
+        </script>
+        <script>
+            var $bodyHtml = $("html, body");
+            function smoothScrollTo(targetSelector, cb) {
+                var $target = $(targetSelector);
+                if ($target.length === 0) return;
+                var targetTop = $target.offset().top;
+                $bodyHtml.stop(true, true).animate(
+                    { scrollTop: targetTop },
+                    500,
+                    function () {
+                        if (window.history && window.history.replaceState) {
+                            window.history.replaceState(null, "", targetSelector);
+                        }
+                        if (cb) cb();
+                    }
+                );
+            }
+
+            $(function () {
+                $("#rolarbaixo, #rolarbaixo2, #rolarbaixo3, #career, #portfolio, #courses, #back-to-top").on(
+                    "click",
+                    function (e) {
+                        e.preventDefault();
+                        var target = $(this).attr("href");
+                        if (target && target.charAt(0) === "#") {
+                            smoothScrollTo(target);
+                        }
+                    }
+                );
+            });
         </script>
         <script>
             $(function () {

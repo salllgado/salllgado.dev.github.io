@@ -379,10 +379,11 @@ body {
     border-left-color: var(--color-gold);
 }
 
-.nav-link.active {
-    color: var(--color-gold);
-    background: var(--color-bg-medium);
-    border-left-color: var(--color-gold);
+.career-nav .nav-pills .nav-link.active,
+.career-nav .nav-link.active {
+    color: var(--color-gold) !important;
+    background: var(--color-bg-medium) !important;
+    border-left-color: var(--color-gold) !important;
     font-weight: 500;
 }
 
@@ -710,6 +711,18 @@ body {
 .btn-contact {
     min-width: 220px;
     height: 56px;
+}
+
+/* == Contact Footer (Back to top + Copyright) == */
+.contact-footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--color-border);
+}
+
+.contact-footer .footer-content {
+    max-width: none;
+    margin: 0;
 }
 
 /* == Footer == */
