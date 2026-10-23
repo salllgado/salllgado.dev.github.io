@@ -526,6 +526,13 @@ body {
     margin-top: 24px;
 }
 
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
 /* == Primary Button == */
 .btn-primary {
     display: inline-flex;
@@ -555,6 +562,32 @@ body {
 
 .btn-primary:active {
     transform: translateY(0);
+}
+
+.btn-secondary-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--color-gold);
+    border-radius: var(--radius-sm);
+    color: var(--color-gold);
+    padding: 14px 24px;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    min-width: 200px;
+    margin-top: 16px;
+}
+
+.btn-secondary-outline:hover {
+    color: var(--color-bg-dark);
+    background: var(--color-gold);
+    transform: translateY(-2px);
 }
 
 /* == Tab Content (Portfolio) == */
