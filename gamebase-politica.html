@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Política de Privacidade | GameBase</title>
+        <meta
+            name="description"
+            content="Política de Privacidade do GameBase, rede social para gamers no iOS. Saiba quais dados coletamos, como usamos e como você pode gerenciá-los."
+        />
+        <meta property="og:title" content="Política de Privacidade | GameBase" />
+        <meta
+            property="og:description"
+            content="Entenda como o GameBase coleta, usa e protege seus dados dentro do aplicativo iOS."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="img/gamebase/icon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/gamebase.css" />
+        <style>
+            .policy {
+                padding: 48px 0 24px;
+            }
+
+            .policy-shell {
+                width: min(100% - 32px, 880px);
+                margin: 0 auto;
+            }
+
+            .policy-updated {
+                display: inline-flex;
+                align-items: center;
+                margin-top: 20px;
+                padding: 8px 14px;
+                border-radius: 999px;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                color: var(--color-text-muted);
+                font-size: 13px;
+            }
+
+            .policy-block {
+                margin-top: 20px;
+                padding: 28px;
+                border-radius: var(--radius-md);
+                border: 1px solid var(--color-border);
+                background: var(--color-surface-soft);
+                box-shadow: var(--shadow-card);
+            }
+
+            .policy-block h2 {
+                margin: 0 0 14px;
+                font-size: clamp(22px, 3vw, 28px);
+                letter-spacing: -0.02em;
+            }
+
+            .policy-block h3 {
+                margin: 22px 0 8px;
+                font-size: 18px;
+                color: var(--color-accent-light);
+            }
+
+            .policy-block p {
+                margin: 0 0 12px;
+                color: var(--color-text-light);
+                line-height: 1.85;
+                font-size: 16px;
+            }
+
+            .policy-block p:last-child {
+                margin-bottom: 0;
+            }
+
+            .policy-block a {
+                color: var(--color-accent-light);
+                text-decoration: none;
+            }
+
+            .policy-block a:hover {
+                text-decoration: underline;
+            }
+
+            .policy-list {
+                margin: 0 0 12px;
+                padding-left: 20px;
+                color: var(--color-text-light);
+                line-height: 1.8;
+            }
+
+            .policy-list li + li {
+                margin-top: 10px;
+            }
+
+            .policy-list strong {
+                color: var(--color-text);
+            }
+
+            .data-table {
+                width: 100%;
+                margin-top: 12px;
+                border-collapse: collapse;
+                font-size: 15px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 12px 14px;
+                text-align: left;
+                border-bottom: 1px solid var(--color-border);
+                color: var(--color-text-light);
+                vertical-align: top;
+            }
+
+            .data-table th {
+                color: var(--color-text);
+                font-weight: 600;
+            }
+
+            .data-table tr:last-child td {
+                border-bottom: none;
+            }
+
+            @media (max-width: 640px) {
+                .data-table,
+                .data-table tbody,
+                .data-table tr,
+                .data-table td,
+                .data-table th {
+                    display: block;
+                    width: 100%;
+                }
+
+                .data-table th {
+                    display: none;
+                }
+
+                .data-table td {
+                    border-bottom: none;
+                    padding: 4px 0;
+                }
+
+                .data-table tr {
+                    padding: 14px 0;
+                    border-bottom: 1px solid var(--color-border);
+                }
+
+                .data-table td::before {
+                    content: attr(data-label);
+                    display: block;
+                    color: var(--color-accent-light);
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.08em;
+                    margin-bottom: 2px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="topbar">
+            <div class="topbar-inner">
+                <a class="brand" href="gamebase.html">
+                    <img
+                        class="brand-mark"
+                        src="img/gamebase/icon.svg"
+                        alt="Ícone do GameBase"
+                    />
+                    <div class="brand-copy">
+                        <strong>GameBase</strong>
+                        <span>Rede de encontro para gamers</span>
+                    </div>
+                </a>
+                <nav class="topbar-nav" aria-label="Navegação da página">
+                    <a href="gamebase.html">Sobre o app</a>
+                    <a href="index.html#port">Voltar ao site</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="policy">
+                <div class="policy-shell">
+                    <span class="section-kicker">Privacidade</span>
+                    <h1 style="margin: 8px 0 0; font-size: clamp(34px, 6vw, 56px); letter-spacing: -0.04em;">
+                        Política de Privacidade
+                    </h1>
+                    <p style="margin: 14px 0 0; color: var(--color-text-light); font-size: 17px; line-height: 1.8;">
+                        Esta política explica quais informações o aplicativo
+                        <strong style="color: var(--color-accent-light); font-weight: 600;">GameBase</strong>
+                        coleta, como esses dados são usados e quais são os seus
+                        direitos. O GameBase é desenvolvido por Chrystian Salgado
+                        Martins dos Santos. Para dúvidas, solicitações ou revisão
+                        desta política, entre em contato pelo e-mail
+                        <a href="mailto:salgado.dev@gmail.com" style="color: var(--color-accent-light);">salgado.dev@gmail.com</a>.
+                    </p>
+                    <span class="policy-updated">Última atualização: 31 de outubro de 2026</span>
+                </div>
+            </section>
+
+            <section class="policy" style="padding-top: 0;">
+                <div class="policy-shell">
+                    <div class="policy-block">
+                        <h2>Aceitação dos termos</h2>
+                        <p>
+                            Ao criar uma conta e usar o GameBase, você concorda
+                            com as práticas descritas nesta política. Caso não
+                            concorde com algum ponto, você não deve utilizar o
+                            aplicativo. Em caso de dúvidas, envie-nos um e-mail
+                            descrevendo a situação desejada.
+                        </p>
+                    </div>
+
+                    <div class="policy-block">
+                        <h2>Dados que coletamos</h2>
+                        <p>
+                            O GameBase coleta apenas as informações necessárias
+                            para o funcionamento do aplicativo, ou seja, para
+                            criar seu perfil gamer, permitir que você organize
+                            seus jogos e se conecte com outras pessoas. Não
+                            realizamos rastreamento para fins de publicidade.
+                        </p>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Dado</th>
+                                    <th>Finalidade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Dado"><strong>E-mail</strong></td>
+                                    <td data-label="Finalidade">
+                                        Criação e acesso à conta, recuperação de
+                                        senha e comunicação de suporte.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Dado"><strong>Nome</strong></td>
+                                    <td data-label="Finalidade">
+                                        Identificação do seu perfil dentro da
+                                        rede social do aplicativo.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Dado"><strong>Identificador de usuário</strong></td>
+                                    <td data-label="Finalidade">
+                                        Associar seu perfil, jogos e preferências
+                                        à sua conta de forma segura.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Dado"><strong>Conteúdo do usuário</strong></td>
+                                    <td data-label="Finalidade">
+                                        Jogos adicionados, lista de desejos,
+                                        plataformas, gamertags e redes sociais
+                                        que você escolhe exibir no seu perfil.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="margin-top: 16px;">
+                            Todos os dados acima são vinculados à sua identidade
+                            apenas para viabilizar o funcionamento do app e
+                            <strong style="color: var(--color-text);">não são usados para rastrear você</strong>
+                            em outros aplicativos ou sites.
+                        </p>
+                    </div>
+
+                    <div class="policy-block">
+                        <h2>Como usamos os dados</h2>
+                        <p>Os dados coletados são usados exclusivamente para:</p>
+                        <ul class="policy-list">
+                            <li>Autenticar e manter sua conta ativa.</li>
+                            <li>Montar e exibir o seu perfil gamer, incluindo plataformas e gamertags.</li>
+                            <li>Permitir que você organize os jogos que tem e os que deseja jogar.</li>
+                            <li>Ajudar você a encontrar e se conectar com outros jogadores.</li>
+                            <li>Oferecer suporte e melhorar a experiência do aplicativo.</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-block">
+                        <h2>Compartilhamento de dados</h2>
+                        <p>
+                            Nós não vendemos seus dados pessoais. As informações
+                            que você escolhe tornar públicas no seu perfil (como
+                            nome de exibição, gamertags, plataformas e jogos)
+                            ficam visíveis para outras pessoas usuárias do
+                            GameBase, pois esse é o propósito social do aplicativo.
+                        </p>
+                        <p>
+                            Dados podem ser processados por provedores de
+                            infraestrutura que hospedam nossos serviços, sempre
+                            de forma limitada ao necessário para o funcionamento
+                            do aplicativo. Também podemos divulgar informações
+                            quando exigido por lei ou para proteger direitos e a
+                            segurança das pessoas usuárias.
+                        </p>
+                    </div>
+
+                    <div class="policy-block">
+                        <h2>Armazenamento e segurança</h2>
+                        <p>
+                            Suas informações são armazenadas em servidores
+                            seguros e tratadas com cuidado para proteger o
+                            acesso à sua conta. Algumas preferências do
+                            aplicativo também podem ser salvas localmente no seu
+                            dispositivo para melhorar a usabilidade.
+                        </p>
+                        <p>
+                            Apesar dos nossos esforços para proteger seus dados,
+                            nenhum método de transmissão ou armazenamento é 100%
+                            seguro. Trabalhamos continuamente para manter padrões
+                            adequados de proteção.
+                        </p>
+                    </div>
+
+                    <div class="policy-block">
+                        <h2>Seus direitos e exclusão de conta</h2>
+                        <p>
+                            Você pode editar as informações do seu perfil a
+                            qualquer momento dentro do aplicativo. Também é
+                            possível excluir sua conta diretamente pelo GameBase.
+                        </p>
+                        <p>
+                            Ao excluir sua conta, os dados associados a ela são
+                            removidos de forma permanente e se tornam
+                            irrecuperáveis. Se preferir, você pode solicitar a
+                            exclusão ou uma cópia dos seus dados enviando um
+                            e-mail para
+                            <a href="mailto:salgado.dev@gmail.com">salgado.dev@gmail.com</a>.
+                        </p>
+                    </div>
+
+                    <div class="policy-block">
+                        <h2>Privacidade de crianças</h2>
+                        <p>
+                            O GameBase não é direcionado a menores de idade e não
+                            coletamos intencionalmente dados de crianças. Se
+                            tomarmos conhecimento de que um dado foi coletado sem
+                            consentimento adequado, tomaremos medidas para removê-lo.
+                        </p>
+                    </div>
+
+                    <div class="policy-block">
+                        <h2>Alterações nesta política</h2>
+                        <p>
+                            Esta política pode ser atualizada periodicamente para
+                            refletir melhorias no aplicativo ou mudanças legais.
+                            Sempre que isso ocorrer, a data de última atualização
+                            no topo desta página será revisada. Recomendamos
+                            revisitá-la de tempos em tempos.
+                        </p>
+                    </div>
+
+                    <div class="policy-block">
+                        <h2>Contato</h2>
+                        <p>
+                            Em caso de dúvidas sobre esta Política de Privacidade
+                            ou sobre o tratamento dos seus dados, fale conosco pelo
+                            e-mail
+                            <a href="mailto:salgado.dev@gmail.com">salgado.dev@gmail.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="page-shell">
+                GameBase por Chrystian Salgado. Para voltar, acesse
+                <a href="gamebase.html">a página do projeto</a> ou
+                <a href="index.html#port">a seção de apps do site principal</a>.
+            </div>
+        </footer>
+    </body>
+</html>
